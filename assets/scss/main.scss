@@ -1,0 +1,90 @@
+@import "color";
+@import url('https://fonts.cdnfonts.com/css/lama-sans');
+
+// start public
+body {
+    text-transform: capitalize;
+    font-family: 'Lama Sans', sans-serif;
+}
+
+.gapIcon {
+    gap: 40px;
+}
+
+// end public
+// start navbar
+.containerNavbar {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.iconPlus {
+    width: 15px;
+}
+
+.iconTop {
+    margin-top: 6.5px;
+}
+
+.v-row .v-list .v-list-item:last-child {
+    .iconTop {
+        display: none;
+    }
+}
+
+.active {
+    color: $hoverNavbar !important;
+}
+
+.flexColorNavbar:hover {
+
+    .iconTop,
+    span {
+        color: $hoverNavbar !important;
+    }
+}
+
+header {
+    background-color: white;
+}
+
+.v-btn--variant-elevated {
+    background-color: transparent !important;
+    min-width: 0 !important;
+    box-shadow: 0px 3px 1px -2px var(--v-shadow-key-umbra-opacity, 0) !important;
+}
+
+// end navbar
+// start media
+@media (max-width: 990px) {
+    .containerNavbar {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    header {
+        background-color: transparent;
+    }
+
+    .listResponse {
+        position: fixed !important;
+        top: 85px;
+        width: 90%;
+
+        .v-list-item {
+            background-color: $colorMobile !important;
+        }
+
+        background-color: $colorWhite !important;
+    }
+
+    .gapIcon {
+        gap: 15px;
+    }
+
+    .flexColorNavbar {
+        color: $hoverNavbar !important;
+    }
+}
+
+// end media
