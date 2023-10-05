@@ -8,82 +8,223 @@ body {
 }
 
 .gapIcon {
-    gap: 40px;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.gap25 {
+    gap: 25px;
+}
+
+.colorText {
+    color: $colorMobile !important;
+}
+
+.hoverTitle:hover {
+    h3 {
+        color: $hoverNavbar;
+    }
+}
+
+.activeTitle {
+    color: $navbarHump;
 }
 
 // end public
 // start navbar
-.containerNavbar {
+body header {
+    background-color: white;
+}
+
+body header .containerNavbar {
     padding-left: 70px;
     padding-right: 70px;
 }
 
-.iconPlus {
-    width: 15px;
-}
-
-.iconTop {
+body header .containerNavbar .listResponse li .flexColorNavbar div .iconTop {
     margin-top: 6.5px;
 }
 
-.v-row .v-list .v-list-item:last-child {
+body header .v-row .v-col .v-list .v-list-item:last-child {
     .iconTop {
         display: none;
     }
 }
 
-.active {
-    color: $hoverNavbar !important;
+.iconTop {
+    transform: rotate(0);
+    transition: 0.5s;
 }
 
-.flexColorNavbar:hover {
+body header .containerNavbar .listResponse li .active {
+    background-color: $hoverNavbar !important;
+
+    .iconTop {
+        transform: rotate(-45deg);
+    }
 
     .iconTop,
     span {
-        color: $hoverNavbar !important;
+        color: $colorWhite !important;
     }
 }
 
-header {
-    background-color: white;
+body header .containerNavbar .listResponse li .flexColorNavbar:hover {
+
+    .iconTop {
+        transform: rotate(-45deg);
+    }
+
+    .iconTop,
+    span {
+        color: $hoverNavbar;
+    }
 }
 
-.v-btn--variant-elevated {
-    background-color: transparent !important;
-    min-width: 0 !important;
-    box-shadow: 0px 3px 1px -2px var(--v-shadow-key-umbra-opacity, 0) !important;
+body header .v-row .listResponse {
+    overflow: unset !important;
+}
+
+body header .containerNavbar .listResponse li .divRelative .divButtonAll {
+    top: 70px;
+    left: 0;
+}
+
+body header .containerNavbar .listResponse li .divRelative .divButtonAll .divNavbarCamel {
+    border-radius: 25px;
+    padding-top: 50px;
+    background-color: $navbarHump;
+}
+
+body header .containerNavbar .listResponse li:nth-child(2) .divButtonAll .divNavbarCamel {
+    flex-direction: row-reverse;
+    background-color: $colorMainTow !important;
+
+    .divBottomGamel {
+        bottom: -20px;
+    }
+}
+
+body header .containerNavbar .listResponse li:nth-child(3) .divButtonAll .divNavbarCamel {
+    background: -webkit-linear-gradient(-10deg, $colorMainTow, $colorMainOne);
+    padding-top: 0;
+
+    .divBottomGamel {
+        bottom: -20px;
+    }
+}
+
+body header .containerNavbar .listResponse li:nth-child(3) {
+    .containerNavbar {
+        .v-row {
+            .v-col {
+                div {
+                    .flexRow {
+                        gap: 40px;
+                        flex-direction: row-reverse !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.divBottomGamel {
+    bottom: -7px;
+}
+
+body header .containerNavbar .listResponse li .divRelative .divButtonAll .containerNavbar .v-row .v-col .colorNavbarDiv {
+    padding: 30px;
+    border-radius: 30px;
+    background-color: $colorMobile;
+    transition: 0.5;
+}
+
+body header .containerNavbar .listResponse li .divRelative .divButtonAll .containerNavbar .v-row .v-col .colorImage {
+    width: 50%;
+    height: 60px;
+}
+
+body header .containerNavbar .listResponse li .divRelative .divButtonAll .containerNavbar .v-row .v-col .colorNavbarDiv:hover {
+    background-color: $colorMainTow;
+
+    .colorImage {
+        filter: brightness(0) invert(1);
+    }
+
+    .colNews {
+        color: $colorWhite;
+    }
+}
+
+body header .containerNavbar .listResponse li .divRelative .divButtonAll .containerNavbar .v-row .colNews {
+    color: $colorMainTow;
+}
+
+body header .containerNavbar .listResponse li .divRelative .divButtonAll .containerNavbar .v-row .v-col .divNavbarCamel .flexRow .divTextTow {
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+.gapTextColumn::before {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 90%;
+    background-color: $colorLine;
+}
+
+body header .containerNavbar .listResponse li .divRelative .divButtonAll .containerNavbar .v-row .v-col .rowChild {
+    .colChild:first-child {
+        .gapTextColumn::before {
+            display: none;
+        }
+    }
 }
 
 // end navbar
 // start media
 @media (max-width: 990px) {
-    .containerNavbar {
+    body header .containerNavbar {
         padding-left: 30px;
         padding-right: 30px;
     }
 
-    header {
+    body header {
         background-color: transparent;
     }
 
-    .listResponse {
+    body header .containerNavbar .listResponse {
         position: fixed !important;
         top: 85px;
         width: 90%;
-
-        .v-list-item {
-            background-color: $colorMobile !important;
-        }
-
-        background-color: $colorWhite !important;
     }
 
     .gapIcon {
         gap: 15px;
     }
 
-    .flexColorNavbar {
+    body header .containerNavbar .listResponse li .flexColorNavbar {
+        background-color: $colorMobile;
         color: $hoverNavbar !important;
+    }
+
+    body header .containerNavbar .listResponse li .divRelative .divButtonAll .containerNavbar .v-row .v-col .colorNavbarDiv {
+        background-color: transparent !important;
+        padding: 5px;
+        padding-right: 0 !important;
+    }
+
+    .gapTextColumn::before {
+        display: none;
+    }
+
+    body header .containerNavbar .listResponse li .divRelative .divButtonAll,
+    body header .containerNavbar .listResponse li .divRelative {
+        position: relative !important;
     }
 }
 
