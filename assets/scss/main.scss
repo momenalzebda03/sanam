@@ -2,6 +2,16 @@
 @import url('https://fonts.cdnfonts.com/css/lama-sans');
 
 // start public
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: $hoverNavbar;
+}
+
 body {
     text-transform: capitalize;
     font-family: 'Lama Sans', sans-serif;
@@ -36,6 +46,7 @@ li {
 // end public
 // start navbar
 body header {
+    border-bottom: 3px solid #ccc;
     background-color: white;
 }
 
@@ -48,7 +59,7 @@ body header .containerNavbar .listResponse li .flexColorNavbar div .iconTop {
     margin-top: 6.5px;
 }
 
-body header .v-row .v-col .v-list .v-list-item:last-child {
+body header .containerNavbar .listResponse li:last-child {
     .iconTop {
         display: none;
     }
@@ -89,7 +100,9 @@ body header .v-row .listResponse {
 }
 
 body header .containerNavbar .listResponse li .divRelative .divButtonAll {
-    top: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    top: 97px;
     left: 0;
 }
 
@@ -186,6 +199,19 @@ body header .containerNavbar .listResponse li .divRelative .divButtonAll .contai
 }
 
 // end navbar
+// start main
+.sectionMaion {
+    background-color: $colorSectionMain;
+    height: 100vh;
+}
+
+.imageMainMobile,
+video {
+    object-fit: cover;
+    z-index: -1;
+}
+
+// end main
 // start media
 @media (max-width: 990px) {
     body header .containerNavbar {
@@ -194,13 +220,19 @@ body header .containerNavbar .listResponse li .divRelative .divButtonAll .contai
     }
 
     body header {
+        border-bottom: 0;
         background-color: transparent;
     }
 
     body header .containerNavbar .listResponse {
         position: fixed !important;
-        top: 85px;
-        width: 90%;
+        left: 0;
+        top: 0;
+        padding-top: 110px;
+        padding-bottom: 40px;
+        z-index: -1;
+        width: 100% !important;
+        background-color: $colorWhite !important;
     }
 
     .gapIcon {
@@ -224,6 +256,7 @@ body header .containerNavbar .listResponse li .divRelative .divButtonAll .contai
 
     body header .containerNavbar .listResponse li .divRelative .divButtonAll,
     body header .containerNavbar .listResponse li .divRelative {
+        top: 0;
         position: relative !important;
     }
 }
