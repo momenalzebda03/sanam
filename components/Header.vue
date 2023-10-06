@@ -6,7 +6,7 @@
                 <v-icon v-else class="text-white">mdi-menu</v-icon>
             </v-btn>
             <v-col>
-                <v-list class="d-flex bg-transparent">
+                <v-list class="d-flex bg-transparent overflow-hidden">
                     <v-list-item class="px-0">
                         <router-link to="/">
                             <img src="~/assets/images&icons/imagesNavbar/luggage.svg" alt="" v-if="mobileMenuOpen">

@@ -43,16 +43,43 @@ li {
     color: $navbarHump;
 }
 
+.containerNavbar {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.borderWhite {
+    border: 2px solid $colorWhite;
+}
+
+.imageAnimation {
+    animation: imageAnimation 1.5s infinite;
+}
+
+@keyframes imageAnimation {
+    0% {
+        transform: translate(0, -10px);
+    }
+
+    50% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, -10px);
+    }
+}
+
+.divMouse {
+    cursor: pointer;
+}
+
 // end public
 // start navbar
 body header {
+    z-index: 1;
     border-bottom: 3px solid #ccc;
     background-color: white;
-}
-
-body header .containerNavbar {
-    padding-left: 70px;
-    padding-right: 70px;
 }
 
 body header .containerNavbar .listResponse li .flexColorNavbar div .iconTop {
@@ -102,7 +129,7 @@ body header .v-row .listResponse {
 body header .containerNavbar .listResponse li .divRelative .divButtonAll {
     padding-top: 40px;
     padding-bottom: 40px;
-    top: 97px;
+    top: 104px;
     left: 0;
 }
 
@@ -200,15 +227,72 @@ body header .containerNavbar .listResponse li .divRelative .divButtonAll .contai
 
 // end navbar
 // start main
-.sectionMaion {
+.sectionMain {
     background-color: $colorSectionMain;
     height: 100vh;
 }
 
 .imageMainMobile,
 video {
+    opacity: 0.9 !important;
     object-fit: cover;
     z-index: -1;
+}
+
+.imageButton {
+    width: 40px;
+    height: 37px;
+}
+
+.divButton::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: $colorWhite;
+    transition: 0.5s;
+}
+
+.textButton {
+    margin-right: 0;
+    transition: 0.5s;
+}
+
+.divButton:hover {
+    div {
+        .textButton {
+            margin-right: 10px !important;
+            color: $colorBlack;
+        }
+    }
+}
+
+.divButton:hover::before {
+    height: 100%;
+}
+
+.divMainBottom {
+    bottom: 35px;
+}
+
+.divNews {
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 10px 10px 0 0;
+    background-color: $navbarHump;
+}
+
+.divBoxNews {
+    border-radius: 10px 0 10px 10px;
+}
+
+.textCardMain {
+    width: 200px;
+}
+
+.textCard {
+    color: $colorText;
 }
 
 // end main
@@ -258,6 +342,15 @@ video {
     body header .containerNavbar .listResponse li .divRelative {
         top: 0;
         position: relative !important;
+    }
+
+    .sizeMain {
+        font-size: 44px !important;
+    }
+
+    .divButton {
+        background-color: $colorWhite;
+
     }
 }
 
