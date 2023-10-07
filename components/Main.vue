@@ -29,7 +29,7 @@
         </div>
         <div class="containerNavbar w-100 pb-5 pb-sm-1 mb-lg-5 position-relative overflow-hidden">
             <v-row class="align-end flex-column-reverse flex-md-row">
-                <v-col md="4">
+                <v-col md="5" lg="2">
                     <div class="d-flex align-center gapIcon text-white font-weight-bold divMouse w-0 widthMobile justify-center justify-md-start"
                         @click="scrollToElement">
                         <div
@@ -49,8 +49,8 @@
                         </div>
                     </div>
                     <div class="d-md-none divCarousel">
-                        <swiper class="mySwiper" :pagination="{ clickable: true, }" :modules="modules">
-                            <swiper-slide>
+                        <swiper :pagination="true" :modules="modules" class="mySwiper overflow-visible">
+                            <swiper-slide class="overflow-hidden">
                                 <router-link to="/"
                                     class="d-flex gap25 text-decoration-none hoverCard position-relative px-5 py-2 align-center bg-white mx-3 rounded-lg justify-end">
                                     <div class="text-end d-flex justify-end flex-column position-relative">
@@ -67,7 +67,7 @@
                                     </div>
                                 </router-link>
                             </swiper-slide>
-                            <swiper-slide>
+                            <swiper-slide class="overflow-hidden">
                                 <router-link to="/"
                                     class="d-flex gap25 text-decoration-none hoverCard position-relative px-5 py-2 align-center bg-white mx-3 rounded-lg justify-end">
                                     <div class="text-end d-flex justify-end flex-column position-relative">
@@ -84,7 +84,7 @@
                                     </div>
                                 </router-link>
                             </swiper-slide>
-                            <swiper-slide>
+                            <swiper-slide class="overflow-hidden">
                                 <router-link to="/"
                                     class="d-flex gap25 text-decoration-none hoverCard position-relative px-5 py-2 align-center bg-white mx-3 rounded-lg justify-end">
                                     <div class="text-end d-flex justify-end flex-column position-relative">
@@ -151,8 +151,17 @@
             </v-row>
         </div>
     </main>
-    <p>welcome</p>
 </template>
+
+<script setup>
+function scrollToElement() {
+    const scrollPosition = 640;
+    window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth',
+    });
+}
+</script>
 
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -171,14 +180,4 @@ export default {
         };
     },
 };
-</script>
-
-<script setup>
-function scrollToElement() {
-    const scrollPosition = 640;
-    window.scrollTo({
-        top: scrollPosition,
-        behavior: 'smooth',
-    });
-}
 </script>

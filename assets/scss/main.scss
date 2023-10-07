@@ -74,6 +74,50 @@ li {
     cursor: pointer;
 }
 
+.textCard {
+    color: $colorText;
+}
+
+.hoverCard::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    border-radius: 15px;
+    width: 106%;
+    height: 115%;
+    transition: 0.4s;
+}
+
+.hoverCard:hover::before {
+    border-radius: 25px;
+    left: -7px;
+    background-color: $colorCard;
+}
+
+.iconPlus {
+    transition: 0.3s;
+}
+
+.hoverPlus:hover {
+    .iconPlus {
+        transform: translate(-5px, 0);
+    }
+}
+
+.swiper-pagination {
+    top: 140px !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 26px !important;
+    border-radius: 20px !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: $colorWhite !important;
+}
+
 // end public
 // start navbar
 body header {
@@ -227,28 +271,28 @@ body header .containerNavbar .listResponse li .divRelative .divButtonAll .contai
 
 // end navbar
 // start main
-.sectionMain {
+body .sectionMain {
     background-color: $colorSectionMain;
     height: 100vh;
 }
 
-.sectionVedioAndImage {
+body .sectionMain .sectionVedioAndImage {
     height: 100vh;
 }
 
-.imageMainMobile,
-video {
+body .sectionMain .sectionVedioAndImage .imageMainMobile,
+body .sectionMain .sectionVedioAndImage video {
     opacity: 0.9 !important;
     object-fit: cover;
     z-index: -1;
 }
 
-.imageButton {
+body .sectionMain .sectionVedioAndImage div div .widthMobile div .imageButton {
     width: 40px;
     height: 37px;
 }
 
-.divButton::before {
+body .sectionMain .sectionVedioAndImage div div .divButton::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -258,12 +302,12 @@ video {
     transition: 0.5s;
 }
 
-.textButton {
+body .sectionMain .sectionVedioAndImage div div .divButton div .textButton {
     margin-right: 0;
     transition: 0.5s;
 }
 
-.divButton:hover {
+body .sectionMain .sectionVedioAndImage div div .divButton:hover {
     div {
         .textButton {
             margin-right: 10px !important;
@@ -272,52 +316,22 @@ video {
     }
 }
 
-.divButton:hover::before {
+body .sectionMain .sectionVedioAndImage div div .divButton:hover::before {
     height: 100%;
 }
 
-.divNews {
+body .containerNavbar .v-row .v-col div .divNews {
     padding-left: 35px;
     padding-right: 35px;
     border-radius: 10px 10px 0 0;
     background-color: $navbarHump;
 }
 
-.divBoxNews {
+body .containerNavbar .v-row .v-col .divBoxNews {
     border-radius: 10px 0 10px 10px;
 }
 
-.textCard {
-    color: $colorText;
-}
-
-.hoverCard::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -50px;
-    border-radius: 15px;
-    width: 106%;
-    height: 115%;
-    transition: 0.4s;
-}
-
-.hoverCard:hover::before {
-    left: -7px;
-    background-color: $colorCard;
-}
-
-.iconPlus {
-    transition: 0.3s;
-}
-
-.hoverPlus:hover {
-    .iconPlus {
-        transform: translate(-5px, 0);
-    }
-}
-
-.mySwiper {
+body main .containerNavbar .v-row .v-col .divCarousel .mySwiper {
     padding-left: 13% !important;
     padding-right: 13% !important;
     width: 100% !important;
@@ -327,7 +341,7 @@ video {
     height: 120px;
 }
 
-.divCarousel {
+body main .containerNavbar .v-row .v-col .divCarousel {
     margin-left: -25%;
     width: 150%;
 }
@@ -385,7 +399,7 @@ video {
         font-size: 44px !important;
     }
 
-    .divButton {
+    body .sectionMain .sectionVedioAndImage div div .divButton {
         background-color: $colorWhite;
     }
 
@@ -393,12 +407,12 @@ video {
         width: 100% !important;
     }
 
-    .divBoxNews {
+    body .containerNavbar .v-row .v-col .divBoxNews {
         border-radius: 10px 10px 10px 10px;
     }
 
-    .sectionVedioAndImage,
-    .sectionMain {
+    body .sectionMain .sectionVedioAndImage,
+    body .sectionMain {
         height: 120vh;
     }
 
@@ -409,8 +423,8 @@ video {
 
 @media(max-width: 300px) {
 
-    .sectionVedioAndImage,
-    .sectionMain {
+    body .sectionMain .sectionVedioAndImage,
+    body .sectionMain {
         height: 140vh;
     }
 
