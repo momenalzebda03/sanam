@@ -347,6 +347,57 @@ body main .containerNavbar .v-row .v-col .divCarousel {
 }
 
 // end main
+// start cardsSanam
+.gap10 {
+    gap: 10px;
+}
+
+.sectionCardsSanam::before {
+    content: url("~/assets/images&icons/imagesAboutUs/star.svg");
+    position: absolute;
+    left: -10px;
+    z-index: -1;
+}
+
+.divCard {
+    border-radius: 20px;
+    background-color: $colorCard;
+}
+
+.divCardImage {
+    background-color: $hoverNavbar;
+    width: 70px;
+    height: 70px;
+    transition: 0.5s;
+}
+
+.sizeText14 {
+    font-size: 14px;
+}
+
+.divHoverTop {
+    transition: 0.5s;
+}
+
+.divCard:hover {
+    background-color: $hoverNavbar;
+    color: $colorWhite;
+
+    .divHoverTop {
+        transform: translate(0, -20px);
+    }
+
+    .sizeText14 {
+        color: $colorWhite;
+    }
+
+    .divCardImage {
+        transform: translate(0, 50px);
+        opacity: 0;
+    }
+}
+
+// end cardsSanam
 // start media
 @media (max-width: 990px) {
     body header .containerNavbar {
