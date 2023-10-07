@@ -129,7 +129,7 @@ body header .v-row .listResponse {
 body header .containerNavbar .listResponse li .divRelative .divButtonAll {
     padding-top: 40px;
     padding-bottom: 40px;
-    top: 104px;
+    top: 89px;
     left: 0;
 }
 
@@ -232,6 +232,10 @@ body header .containerNavbar .listResponse li .divRelative .divButtonAll .contai
     height: 100vh;
 }
 
+.sectionVedioAndImage {
+    height: 100vh;
+}
+
 .imageMainMobile,
 video {
     opacity: 0.9 !important;
@@ -272,10 +276,6 @@ video {
     height: 100%;
 }
 
-.divMainBottom {
-    bottom: 35px;
-}
-
 .divNews {
     padding-left: 35px;
     padding-right: 35px;
@@ -287,12 +287,49 @@ video {
     border-radius: 10px 0 10px 10px;
 }
 
-.textCardMain {
-    width: 200px;
-}
-
 .textCard {
     color: $colorText;
+}
+
+.hoverCard::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    border-radius: 15px;
+    width: 106%;
+    height: 115%;
+    transition: 0.4s;
+}
+
+.hoverCard:hover::before {
+    left: -7px;
+    background-color: $colorCard;
+}
+
+.iconPlus {
+    transition: 0.3s;
+}
+
+.hoverPlus:hover {
+    .iconPlus {
+        transform: translate(-5px, 0);
+    }
+}
+
+.mySwiper {
+    padding-left: 13% !important;
+    padding-right: 13% !important;
+    width: 100% !important;
+}
+
+.hoverCard {
+    height: 120px;
+}
+
+.divCarousel {
+    margin-left: -25%;
+    width: 150%;
 }
 
 // end main
@@ -350,7 +387,39 @@ video {
 
     .divButton {
         background-color: $colorWhite;
+    }
 
+    .widthMobile {
+        width: 100% !important;
+    }
+
+    .divBoxNews {
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .sectionVedioAndImage,
+    .sectionMain {
+        height: 120vh;
+    }
+
+    .textCard {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 300px) {
+
+    .sectionVedioAndImage,
+    .sectionMain {
+        height: 140vh;
+    }
+
+    .hoverCard {
+        flex-direction: column !important;
+
+        div {
+            text-align: center !important;
+        }
     }
 }
 

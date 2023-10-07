@@ -1,6 +1,6 @@
 <template>
     <header class="position-fixed w-100">
-        <v-row class="py-4 py-md-4 containerNavbar d-flex justify-space-between align-center">
+        <v-row class="py-4 py-md-2 containerNavbar d-flex justify-space-between align-center">
             <v-btn @click="toggleMobileMenu" class="d-md-none bg-transparent text-h6">
                 <v-icon v-if="mobileMenuOpen">mdi-close</v-icon>
                 <v-icon v-else class="text-white">mdi-menu</v-icon>
@@ -26,7 +26,7 @@
                     </v-list-item>
                 </v-list>
             </v-col>
-            <ul class="d-flex flex-column-reverse flex-md-row gapIcon listResponse" v-if="mobileMenuOpen">
+            <ul class="d-flex flex-column-reverse flex-md-row gapIcon listResponse px-5 px-md-0" v-if="mobileMenuOpen">
                 <li class="rounded-lg" v-for="(listNavbar, index) in listNavbars" :key="listNavbar">
                     <router-link to="/" :class="{ 'active': listNavbar.activeComponent }" @click="toggleActiveState(index)"
                         class="py-3 px-4 rounded-lg d-flex align-center flexColorNavbar justify-space-between text-decoration-none text-black font-weight-bold">
