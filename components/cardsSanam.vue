@@ -12,12 +12,14 @@
                     رعاية الإبل بشكل مستدام ومبتكر.</p>
             </div>
             <v-row class="mt-5 pt-5">
-                <v-col>
+                <v-col cols="12" md="4" class="position-relative">
                     <div class="divCard px-5 py-5 d-flex flex-column align-center gap10">
+                        <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs1.svg" alt=""
+                            class="position-absolute imageBackgroundCards">
                         <div class="divCardImage rounded-circle d-flex justify-center align-center">
                             <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs1.svg" alt="">
                         </div>
-                        <div class="d-flex flex-column gap10 divHoverTop">
+                        <div class="d-flex flex-column gap10 divHoverTop position-relative">
                             <h2>الأهداف</h2>
                             <p class="textCard sizeText14">نتجاوز الحدود التقليدية ونجسد الروح الإبداعية في مجال رعاية
                                 الإبل. نسعى جاهدين لتعزيز التراث العربي ونشر الوعي بأهمية الإبل من خلال منصة شاملة ومتقدمة
@@ -25,29 +27,53 @@
                         </div>
                     </div>
                 </v-col>
-                <v-col>
+                <v-col cols="12" md="4" class="position-relative">
                     <div class="divCard px-5 py-5 d-flex flex-column align-center gap10">
+                        <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs2.svg" alt=""
+                            class="position-absolute imageBackgroundCards">
                         <div class="divCardImage rounded-circle d-flex justify-center align-center">
-                            <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs1.svg" alt="">
+                            <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs2.svg" alt="">
                         </div>
-                        <h2>الأهداف</h2>
-                        <p class="textCard sizeText14">نتجاوز الحدود التقليدية ونجسد الروح الإبداعية في مجال رعاية
-                            الإبل. نسعى جاهدين لتعزيز التراث العربي ونشر الوعي بأهمية الإبل من خلال منصة شاملة ومتقدمة
-                            تلبي جميع احتياجات الإبل وتضمن رفاهيتها وصحتها.</p>
+                        <div class="d-flex flex-column gap10 divHoverTop position-relative">
+                            <h2>الرسالة</h2>
+                            <p class="textCard sizeText14">إبداعنا يكمن في دمج التراث العربي العريق وروح الابتكار التقني.
+                                حيث نهدف إلى إيصال رسالتنا الهامة بطرق مبتكرة وفعالة، وذلك بتعزيز الوعي بأهمية الإبل
+                                ومساهمتها الحيوية في ثقافتنا واقتصادنا.</p>
+                        </div>
                     </div>
                 </v-col>
-                <v-col>
+                <v-col cols="12" md="4" class="position-relative">
                     <div class="divCard px-5 py-5 d-flex flex-column align-center gap10">
+                        <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs3.svg" alt=""
+                            class="position-absolute imageBackgroundCards">
                         <div class="divCardImage rounded-circle d-flex justify-center align-center">
-                            <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs1.svg" alt="">
+                            <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs3.svg" alt="">
                         </div>
-                        <h2>الأهداف</h2>
-                        <p class="textCard sizeText14">نتجاوز الحدود التقليدية ونجسد الروح الإبداعية في مجال رعاية
-                            الإبل. نسعى جاهدين لتعزيز التراث العربي ونشر الوعي بأهمية الإبل من خلال منصة شاملة ومتقدمة
-                            تلبي جميع احتياجات الإبل وتضمن رفاهيتها وصحتها.</p>
+                        <div class="d-flex flex-column gap10 divHoverTop position-relative">
+                            <h2>الرؤية</h2>
+                            <p class="textCard sizeText14">نطمح لأن نصبح روادًا في سوق الإبل، وذلك من خلال التركيز على
+                                الابتكار والتفرد والتميز باستخدام أحدث التقنيات والأساليب لتحسين جودة الرعاية ورفع مستوى
+                                الإنتاجية لجميع رعاة الإبل..</p>
+                        </div>
                     </div>
                 </v-col>
             </v-row>
+            <div class="mt-5 pt-3">
+                <div class="w-100 d-flex justify-center">
+                    <div class="d-flex align-center overflow-hidden flex-column divTextHeight">
+                        <router-link to="/"
+                            class="d-flex gap25 align-center justify-center activeTitle text-decoration-none hoverText">
+                            <i class="fas fa-chevron-left"></i>
+                            <span class="text-h5 font-weight-bold text-no-wrap">المزيد حول سنام</span>
+                        </router-link>
+                        <router-link to="/"
+                            class="d-flex gap25 align-center justify-center activeTitle text-decoration-none">
+                            <i class="fas fa-chevron-left"></i>
+                            <span class="text-h5 font-weight-bold text-no-wrap">المزيد حول سنام</span>
+                        </router-link>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </template>
