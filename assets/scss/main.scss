@@ -173,7 +173,7 @@ body header .v-row .listResponse {
 body header .containerNavbar .listResponse li .divRelative .divButtonAll {
     padding-top: 40px;
     padding-bottom: 40px;
-    top: 89px;
+    top: 86px;
     left: 0;
 }
 
@@ -331,7 +331,7 @@ body .containerNavbar .v-row .v-col .divBoxNews {
     border-radius: 10px 0 10px 10px;
 }
 
-body main .containerNavbar .v-row .v-col .divCarousel .mySwiper {
+.mySwiper {
     padding-left: 13% !important;
     padding-right: 13% !important;
     width: 100% !important;
@@ -426,7 +426,7 @@ body .sectionCardsSanam .containerNavbar div div .divTextHeight:hover {
 
 // end cardsSanam
 // start imageCards
-body section .containerNavbar .imageColor {
+.imageColor {
 
     img {
         border-radius: 40px;
@@ -471,6 +471,23 @@ body section .containerNavbar .imageColor:hover {
 }
 
 // end imageCards
+// start sectionWorldOfCamels
+.mySwiper1,
+.sectionWorldOfCamels {
+    margin-top: 100px;
+}
+
+.textNavbar {
+    color: $hoverNavbar;
+}
+
+.swiper-slide-active {
+    img {
+        transform: scale(2);
+        object-fit: contain;
+    }
+}
+// end sectionWorldOfCamels
 // start media
 @media (max-width: 990px) {
     body .containerNavbar {

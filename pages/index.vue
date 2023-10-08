@@ -3,4 +3,5 @@
     <Main />
     <cards-sanam />
     <ImageCards />
+    <WorldOfCamels />
 </template>
