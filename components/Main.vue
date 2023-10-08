@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="d-md-none divCarousel">
-                        <swiper :pagination="true" :modules="modules" class="mySwiper overflow-visible">
+                        <swiper :pagination="true" :modules="modules" class="topSwiperMobile overflow-visible">
                             <swiper-slide class="overflow-hidden">
                                 <router-link to="/"
                                     class="d-flex gap25 text-decoration-none hoverCard position-relative px-5 py-2 align-center bg-white mx-3 rounded-lg justify-end">
