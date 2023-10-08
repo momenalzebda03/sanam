@@ -1,6 +1,6 @@
 <template>
     <section class="mt-5 pt-2 text-center position-relative">
-        <div class="containerNavbar">
+        <div class="containerNavbar containerNavbarMobile">
             <v-row class="mt-5 pt-5 px-0">
                 <v-col cols="12" md="4">
                     <div class="position-relative imageColor text-white overflow-hidden">

@@ -1,6 +1,6 @@
 <template>
     <section class="mt-5 pt-2 text-center position-relative sectionCardsSanam">
-        <div class="containerNavbar">
+        <div class="containerNavbar containerNavbarMobile">
             <div class="d-flex flex-column gap10">
                 <div>
                     <img src="~/assets/images&icons/imagesAboutUs/imageSanam.png" alt="">
@@ -13,7 +13,7 @@
             </div>
             <v-row class="mt-5 pt-5">
                 <v-col cols="12" md="4" class="position-relative">
-                    <div class="divCard px-5 py-5 d-flex flex-column align-center gap10">
+                    <div class="divCard px-5 py-5 d-flex flex-column align-center gap10 h-100">
                         <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs1.svg" alt=""
                             class="position-absolute imageBackgroundCards">
                         <div class="divCardImage rounded-circle d-flex justify-center align-center">
@@ -28,7 +28,7 @@
                     </div>
                 </v-col>
                 <v-col cols="12" md="4" class="position-relative">
-                    <div class="divCard px-5 py-5 d-flex flex-column align-center gap10">
+                    <div class="divCard px-5 py-5 d-flex flex-column align-center gap10 h-100">
                         <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs2.svg" alt=""
                             class="position-absolute imageBackgroundCards">
                         <div class="divCardImage rounded-circle d-flex justify-center align-center">
@@ -43,7 +43,7 @@
                     </div>
                 </v-col>
                 <v-col cols="12" md="4" class="position-relative">
-                    <div class="divCard px-5 py-5 d-flex flex-column align-center gap10">
+                    <div class="divCard px-5 py-5 d-flex flex-column align-center gap10 h-100">
                         <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs3.svg" alt=""
                             class="position-absolute imageBackgroundCards">
                         <div class="divCardImage rounded-circle d-flex justify-center align-center">
