@@ -31,7 +31,7 @@
                     <router-link to="/" :class="{ 'active': listNavbar.activeComponent }" @click="toggleActiveState(index)"
                         class="py-3 px-4 rounded-lg d-flex align-center flexColorNavbar justify-space-between text-decoration-none text-black font-weight-bold">
                         <div class="text-right">
-                            <i class="fas fa-plus iconTop me-3"></i>
+                            <i class="fas fa-plus iconTop tagTransition me-3"></i>
                         </div>
                         <span>{{ listNavbar.titleNavbar }}</span>
                     </router-link>

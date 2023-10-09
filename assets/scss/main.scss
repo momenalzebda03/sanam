@@ -52,6 +52,10 @@ li {
     border: 2px solid $colorWhite;
 }
 
+.borderBlack {
+    border: 2px solid $colorBlack;
+}
+
 .imageAnimation {
     animation: imageAnimation 1.5s infinite;
 }
@@ -118,6 +122,80 @@ li {
     background-color: $colorWhite !important;
 }
 
+.tagTransition {
+    transition: 0.5s;
+}
+
+.imageButton {
+    width: 40px;
+    height: 37px;
+}
+
+.divButton::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: $colorWhite;
+    transition: 0.5s;
+}
+
+.divButton:hover {
+    div {
+        .textButton {
+            margin-right: 10px !important;
+            color: $colorBlack;
+        }
+    }
+}
+
+.divButton:hover::before {
+    height: 100%;
+}
+
+.divButtonBlack {
+    width: 20%;
+}
+
+.divButtonBlack:hover {
+    div {
+        .textButton {
+            color: $colorWhite !important;
+        }
+    }
+}
+
+.divButtonBlack::before {
+    background-color: $colorBlack;
+}
+
+.imageWhite {
+    filter: brightness(0) invert(1);
+}
+
+.divWithdBlack {
+    margin-top: 60px;
+}
+
+.textButton {
+    margin-right: 0;
+}
+
+.divTextHeight {
+    height: 35px;
+}
+
+.divTextHeight .hoverText {
+    transition: 0.3s;
+}
+
+.divTextHeight:hover {
+    .hoverText {
+        margin-top: -30px;
+    }
+}
+
 // end public
 // start navbar
 body header {
@@ -138,7 +216,6 @@ body header .containerNavbar .listResponse li:last-child {
 
 .iconTop {
     transform: rotate(0);
-    transition: 0.5s;
 }
 
 body header .containerNavbar .listResponse li .active {
@@ -224,7 +301,6 @@ body header .containerNavbar .listResponse li .divRelative .divButtonAll .contai
     padding: 30px;
     border-radius: 30px;
     background-color: $colorMobile;
-    transition: 0.5;
 }
 
 body header .containerNavbar .listResponse li .divRelative .divButtonAll .containerNavbar .v-row .v-col .colorImage {
@@ -287,39 +363,6 @@ body .sectionMain .sectionVedioAndImage video {
     z-index: -1;
 }
 
-body .sectionMain .sectionVedioAndImage div div .widthMobile div .imageButton {
-    width: 40px;
-    height: 37px;
-}
-
-body .sectionMain .sectionVedioAndImage div div .divButton::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-    background-color: $colorWhite;
-    transition: 0.5s;
-}
-
-body .sectionMain .sectionVedioAndImage div div .divButton div .textButton {
-    margin-right: 0;
-    transition: 0.5s;
-}
-
-body .sectionMain .sectionVedioAndImage div div .divButton:hover {
-    div {
-        .textButton {
-            margin-right: 10px !important;
-            color: $colorBlack;
-        }
-    }
-}
-
-body .sectionMain .sectionVedioAndImage div div .divButton:hover::before {
-    height: 100%;
-}
-
 body .containerNavbar .v-row .v-col div .divNews {
     padding-left: 35px;
     padding-right: 35px;
@@ -334,7 +377,7 @@ body .containerNavbar .v-row .v-col .divBoxNews {
 .topSwiperMobile {
     padding-left: 10% !important;
     padding-right: 10% !important;
-    width: 85%;
+    width: 90%;
 }
 
 .hoverCard {
@@ -368,15 +411,10 @@ body .sectionCardsSanam::before {
     background-color: $hoverNavbar;
     width: 70px;
     height: 70px;
-    transition: 0.5s;
 }
 
 body .sectionCardsSanam .containerNavbar .divCard .divHoverTop .sizeText14 {
     font-size: 14px;
-}
-
-body .sectionCardsSanam .containerNavbar .divCard .divHoverTop {
-    transition: 0.5s;
 }
 
 body .sectionCardsSanam .containerNavbar .divCard:hover {
@@ -409,21 +447,6 @@ body .sectionCardsSanam .containerNavbar .divCard .imageBackgroundCards {
     transition: 0.4s;
 }
 
-body .sectionCardsSanam .containerNavbar div div .divTextHeight {
-    width: 170px;
-    height: 35px;
-}
-
-body .sectionCardsSanam .containerNavbar div div .divTextHeight .hoverText {
-    transition: 0.3s;
-}
-
-body .sectionCardsSanam .containerNavbar div div .divTextHeight:hover {
-    .hoverText {
-        margin-top: -30px;
-    }
-}
-
 // end cardsSanam
 // start imageCards
 .imageColor {
@@ -442,12 +465,10 @@ body .sectionCardsSanam .containerNavbar div div .divTextHeight:hover {
 }
 
 .imageColor div .textBottom {
-    transition: 0.5s;
     bottom: -70px;
 }
 
 .divTextImage {
-    transition: 0.5s;
     top: 200px;
     gap: 10px;
 }
@@ -470,42 +491,41 @@ body .sectionCardsSanam .containerNavbar div div .divTextHeight:hover {
 
 // end imageCards
 // start sectionWorldOfCamels
-.textNavbar {
+body .sectionWorldOfCamels .containerNavbar div .textNavbar {
     color: $hoverNavbar;
 }
 
-.mySwiper1,
-.sectionWorldOfCamels {
+body .sectionWorldOfCamels .mySwiper,
+body .sectionWorldOfCamels {
     margin-top: 100px;
 }
 
-.sectionWorldOfCamels::before {
+body .sectionWorldOfCamels::before {
     content: url("/assets/images&icons/imagesWord/background.png");
     position: absolute;
     right: 0;
-    bottom: -120px;
+    bottom: 80px;
 }
 
-.imageColor .textBottom1,
-.imageColor1::before,
-.swiperImage {
+body .sectionWorldOfCamels .mySwiper .imageColor .textBottom1,
+body .sectionWorldOfCamels .mySwiper .imageColor1::before,
+body .sectionWorldOfCamels .mySwiper .imageColor1 .swiperImage {
     width: 380px !important;
     border-radius: 20px !important;
 }
 
-.imageColor .textBottom1 {
-    bottom: 0 !important;
-    // left: 0;
+body .sectionWorldOfCamels .mySwiper .imageColor .textBottom1 {
+    transition: 0.5s;
+    bottom: 15px;
+    left: 0;
+    z-index: 1;
 }
 
-.textBottom1 {
-    margin-bottom: 30px;
-}
-
-.swiper-slide-active {
+body .sectionWorldOfCamels .mySwiper .swiper-slide-active {
 
     .imageColor1::before,
     .swiperImage {
+        font-size: 20px !important;
         transform: scale(1.2);
     }
 
@@ -514,51 +534,59 @@ body .sectionCardsSanam .containerNavbar div div .divTextHeight:hover {
         height: 97%;
     }
 
-    // .imageColor .textBottom1 {
-    //     z-index: 2;
-    //     transition: 0.5s;
-    //     bottom: -30px !important;
-    // }
-
     .imageColor1:hover {
         .textBottom1 {
-            height: 80% !important;
-            bottom: 0 !important;
-            left: -35px;
-            width: 155%;
+            left: 50px;
+            bottom: 115px;
+        }
 
+        .textBottom1 {
             .opacity0 {
                 opacity: 0;
             }
 
-            .opacity1 {
-                opacity: 1;
+            .hoverImage {
+                margin-left: -60px;
+                width: 100%;
+                display: flex !important;
             }
         }
     }
 }
 
-.opacity0 {
-    transition: 0.5s;
+body .sectionWorldOfCamels .mySwiper .imageColor1 .textBottom1 .hoverImage .divCircle {
+    width: 80px;
+    height: 80px;
 }
 
-.opacity1 {
-    transition: 0.5s;
-    opacity: 0;
-}
-
-.divCircle {
-    width: 40px;
-    height: 40px;
+body .sectionWorldOfCamels .mySwiper .imageColor1 .textBottom1 .hoverImage .iconSize {
+    font-size: 25px;
 }
 
 // end sectionWorldOfCamels
+// start Shepherd
+body .containerNavbar .sectionShepherd {
+    background-color: $hoverNavbar;
+}
+
+body .containerNavbar .sectionShepherd::before {
+    content: url("/assets/images&icons/imagesOurPartners/background.png");
+    position: absolute;
+    right: -70px;
+    top: -30px;
+}
+
+body .containerNavbar .sectionShepherd div .tagSize28 {
+    font-size: 28px;
+}
+
+// end Shepherd
 // start media
 @media (max-width: 1600px) {
 
-    .imageColor .textBottom1,
-    .imageColor1::before,
-    .swiperImage {
+    body .sectionWorldOfCamels .mySwiper .imageColor .textBottom1,
+    body .sectionWorldOfCamels .mySwiper .imageColor1::before,
+    body .sectionWorldOfCamels .mySwiper .imageColor1 .swiperImage {
         border-radius: 20px !important;
         width: 120%;
     }
@@ -640,6 +668,55 @@ body .sectionCardsSanam .containerNavbar div div .divTextHeight:hover {
     .sectionWorldOfCamels::before {
         bottom: -50px;
     }
+
+    body .sectionWorldOfCamels .mySwiper .imageColor .textBottom1,
+    body .sectionWorldOfCamels .mySwiper .imageColor1::before,
+    body .sectionWorldOfCamels .mySwiper .imageColor1 .swiperImage {
+        width: 90% !important;
+    }
+
+    body .sectionWorldOfCamels .mySwiper .swiper-slide-active {
+
+        .imageColor1::before,
+        .swiperImage {
+            transform: scale(1.1);
+        }
+    }
+
+    body .sectionWorldOfCamels .mySwiper,
+    body .sectionWorldOfCamels {
+        margin-top: 50px !important;
+    }
+
+    body .sectionWorldOfCamels .mySwiper .imageColor .textBottom1 {
+        bottom: 120px;
+    }
+
+    body .sectionWorldOfCamels .mySwiper .imageColor1 .textBottom1 .hoverImage .divCircle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .titleCardText {
+        font-size: 18px;
+    }
+
+    .textCardText {
+        font-size: 14px;
+    }
+
+    body .sectionWorldOfCamels .mySwiper .imageColor1 .textBottom1 .hoverImage .iconSize {
+        font-size: 15px;
+    }
+
+    body .sectionWorldOfCamels .mySwiper .imageColor1 .textBottom1 .hoverImage {
+        width: 95%;
+        display: flex !important;
+    }
+
+    .divButtonBlack {
+        width: 80%;
+    }
 }
 
 @media(max-width: 300px) {
@@ -655,6 +732,10 @@ body .sectionCardsSanam .containerNavbar div div .divTextHeight:hover {
         div {
             text-align: center !important;
         }
+    }
+
+    .textBottom1 {
+        display: none;
     }
 }
 

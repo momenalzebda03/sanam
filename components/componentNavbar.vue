@@ -21,7 +21,7 @@
                     <v-col>
                         <v-row class="text-end" tag="ul">
                             <v-col cols="12" md="6" tag="li">
-                                <div class="colorNavbarDiv">
+                                <div class="colorNavbarDiv tagTransition">
                                     <router-link to="/" class="text-decoration-none">
                                         <v-row class="align-center">
                                             <v-col class="colNews">
@@ -36,7 +36,7 @@
                                 </div>
                             </v-col>
                             <v-col cols="12" md="6" tag="li">
-                                <div class="colorNavbarDiv">
+                                <div class="colorNavbarDiv tagTransition">
                                     <router-link to="/" class="text-decoration-none">
                                         <v-row class="align-center">
                                             <v-col class="colNews">
@@ -51,7 +51,7 @@
                                 </div>
                             </v-col>
                             <v-col cols="12" md="6" tag="li">
-                                <div class="colorNavbarDiv">
+                                <div class="colorNavbarDiv tagTransition">
                                     <router-link to="/" class="text-decoration-none">
                                         <v-row class="align-center">
                                             <v-col class="colNews">
@@ -66,7 +66,7 @@
                                 </div>
                             </v-col>
                             <v-col cols="12" md="6" tag="li">
-                                <div class="colorNavbarDiv">
+                                <div class="colorNavbarDiv tagTransition">
                                     <router-link to="/" class="text-decoration-none">
                                         <v-row class="align-center">
                                             <v-col class="colNews">

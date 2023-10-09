@@ -1,6 +1,6 @@
 <template>
     <section class="mt-5 pt-2 text-center position-relative sectionCardsSanam">
-        <div class="containerNavbar containerNavbarMobile">
+        <div class="containerNavbar">
             <div class="d-flex flex-column gap10">
                 <div>
                     <img src="~/assets/images&icons/imagesAboutUs/imageSanam.png" alt="">
@@ -16,10 +16,10 @@
                     <div class="divCard px-5 py-5 d-flex flex-column align-center gap10 h-100">
                         <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs1.svg" alt=""
                             class="position-absolute imageBackgroundCards">
-                        <div class="divCardImage rounded-circle d-flex justify-center align-center">
+                        <div class="divCardImage tagTransition rounded-circle d-flex justify-center align-center">
                             <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs1.svg" alt="">
                         </div>
-                        <div class="d-flex flex-column gap10 divHoverTop position-relative">
+                        <div class="d-flex flex-column gap10 divHoverTop tagTransition position-relative">
                             <h2>الأهداف</h2>
                             <p class="textCard sizeText14">نتجاوز الحدود التقليدية ونجسد الروح الإبداعية في مجال رعاية
                                 الإبل. نسعى جاهدين لتعزيز التراث العربي ونشر الوعي بأهمية الإبل من خلال منصة شاملة ومتقدمة
@@ -31,10 +31,10 @@
                     <div class="divCard px-5 py-5 d-flex flex-column align-center gap10 h-100">
                         <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs2.svg" alt=""
                             class="position-absolute imageBackgroundCards">
-                        <div class="divCardImage rounded-circle d-flex justify-center align-center">
+                        <div class="divCardImage tagTransition rounded-circle d-flex justify-center align-center">
                             <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs2.svg" alt="">
                         </div>
-                        <div class="d-flex flex-column gap10 divHoverTop position-relative">
+                        <div class="d-flex flex-column gap10 divHoverTop tagTransition position-relative">
                             <h2>الرسالة</h2>
                             <p class="textCard sizeText14">إبداعنا يكمن في دمج التراث العربي العريق وروح الابتكار التقني.
                                 حيث نهدف إلى إيصال رسالتنا الهامة بطرق مبتكرة وفعالة، وذلك بتعزيز الوعي بأهمية الإبل
@@ -46,10 +46,10 @@
                     <div class="divCard px-5 py-5 d-flex flex-column align-center gap10 h-100">
                         <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs3.svg" alt=""
                             class="position-absolute imageBackgroundCards">
-                        <div class="divCardImage rounded-circle d-flex justify-center align-center">
+                        <div class="divCardImage tagTransition rounded-circle d-flex justify-center align-center">
                             <img src="~/assets/images&icons/imagesAboutUs/iconAboutUs3.svg" alt="">
                         </div>
-                        <div class="d-flex flex-column gap10 divHoverTop position-relative">
+                        <div class="d-flex flex-column gap10 divHoverTop tagTransition position-relative">
                             <h2>الرؤية</h2>
                             <p class="textCard sizeText14">نطمح لأن نصبح روادًا في سوق الإبل، وذلك من خلال التركيز على
                                 الابتكار والتفرد والتميز باستخدام أحدث التقنيات والأساليب لتحسين جودة الرعاية ورفع مستوى
@@ -58,22 +58,11 @@
                     </div>
                 </v-col>
             </v-row>
-            <div class="mt-5 pt-3">
-                <div class="w-100 d-flex justify-center">
-                    <div class="d-flex align-center overflow-hidden flex-column divTextHeight">
-                        <router-link to="/"
-                            class="d-flex gap25 align-center justify-center activeTitle text-decoration-none hoverText">
-                            <i class="fas fa-chevron-left"></i>
-                            <span class="text-h5 font-weight-bold text-no-wrap">المزيد حول سنام</span>
-                        </router-link>
-                        <router-link to="/"
-                            class="d-flex gap25 align-center justify-center activeTitle text-decoration-none">
-                            <i class="fas fa-chevron-left"></i>
-                            <span class="text-h5 font-weight-bold text-no-wrap">المزيد حول سنام</span>
-                        </router-link>
-                    </div>
-                </div>
-            </div>
+            <component-shepherd :indexNumber="indexNumber" />
         </div>
     </section>
 </template>
+
+<script setup>
+const indexNumber = ref(0);
+</script>

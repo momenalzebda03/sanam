@@ -6,9 +6,9 @@
                     <div class="position-relative imageColor text-white overflow-hidden">
                         <img src="~/assets/images&icons/componentImages/imageComponent3.png" alt="" class="w-100">
                         <div class="position-relative d-flex justify-center">
-                            <div class="position-absolute textBottom px-5 d-flex flex-column">
+                            <div class="position-absolute textBottom tagTransition px-5 d-flex flex-column">
                                 <h2>خدمات الإبل</h2>
-                                <div class="position-relative divTextImage d-flex flex-column">
+                                <div class="position-relative divTextImage tagTransition d-flex flex-column">
                                     <h3>تعرف على مجموعة متنوعة من المنتجات والمعدات التي تلبي احتياجات الإبل وتساهـ ...</h3>
                                     <div class="w-100 d-flex justify-center">
                                         <router-link to="/"
@@ -26,9 +26,9 @@
                     <div class="position-relative imageColor text-white overflow-hidden">
                         <img src="~/assets/images&icons/componentImages/imageComponent2.png" alt="" class="w-100">
                         <div class="position-relative d-flex justify-center">
-                            <div class="position-absolute textBottom px-5 d-flex flex-column">
+                            <div class="position-absolute textBottom tagTransition px-5 d-flex flex-column">
                                 <h2>لوازم الإبل</h2>
-                                <div class="position-relative divTextImage d-flex flex-column">
+                                <div class="position-relative divTextImage tagTransition d-flex flex-column">
                                     <h3>تصفح مجموعتنا الواسعة من لوازم الإبل كل ما تحتاجه لرعاية الإبل بأفضل جودة وأسـ...
                                     </h3>
                                     <div class="w-100 d-flex justify-center">
@@ -47,9 +47,9 @@
                     <div class="position-relative imageColor text-white overflow-hidden">
                         <img src="~/assets/images&icons/componentImages/imageComponent1.png" alt="" class="w-100">
                         <div class="position-relative d-flex justify-center">
-                            <div class="position-absolute textBottom px-5 d-flex flex-column">
+                            <div class="position-absolute textBottom tagTransition px-5 d-flex flex-column">
                                 <h2>عالم الإبل</h2>
-                                <div class="position-relative divTextImage d-flex flex-column">
+                                <div class="position-relative divTextImage tagTransition d-flex flex-column">
                                     <h3>تعرّف على الإبل واكتشف تاريخها العريق وثقافتها وأهميتها وكيفية رعايتها وتدريبـ ...
                                     </h3>
                                     <div class="w-100 d-flex justify-center">

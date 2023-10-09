@@ -11,20 +11,7 @@
                     <h2 class="text-h1">الإبل</h2>
                     <h3 class="sizeMain text-h2">عِزٌ لأهْلِها والعَزيزُ يُعَز</h3>
                 </div>
-                <div class="d-flex justify-center mb-5 pb-5 mb-md-0 pb-md-0 px-3 px-md-0">
-                    <router-link to="/"
-                        class="py-3 widthMobile w-75 divButton rounded-pill position-relative overflow-hidden text-white text-decoration-none borderWhite">
-                        <div class="ps-4 d-flex align-center position-relative">
-                            <div class="bg-white imageButton rounded-circle d-flex justify-center align-center pe-1">
-                                <img src="~/assets/images&icons/imagesAll/iconArrawLeft.svg" alt="">
-                            </div>
-                            <div class="text-center w-100 textButton me-5 me-md-0">
-                                <span class="d-md-none text-h5 text-black">الفعاليات</span>
-                                <span class="d-none d-md-block text-h5">تصفح لوازم الإبل</span>
-                            </div>
-                        </div>
-                    </router-link>
-                </div>
+                <component-button :indexNumber="indexNumber" />
             </div>
         </div>
         <div class="containerNavbar w-100 pb-5 pb-sm-1 mb-lg-5 position-relative overflow-hidden">
@@ -154,6 +141,7 @@
 </template>
 
 <script setup>
+const indexNumber = ref(0);
 function scrollToElement() {
     const scrollPosition = 660;
     window.scrollTo({
