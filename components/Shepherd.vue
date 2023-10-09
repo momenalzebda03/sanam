@@ -1,6 +1,6 @@
 <template>
     <section class="mt-5 pt-5 containerNavbar">
-        <div class="sectionShepherd position-relative divCard">
+        <div class="sectionShepherd position-relative divCard overflow-hidden">
             <v-container>
                 <v-row class="text-center text-md-end align-center text-white py-5 flex-column-reverse flex-md-row">
                     <v-col md="8">

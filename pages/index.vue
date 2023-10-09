@@ -5,4 +5,5 @@
     <ImageCards />
     <WorldOfCamels />
     <Shepherd />
+    <camel-supplies />
 </template>
