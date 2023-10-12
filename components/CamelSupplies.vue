@@ -1,42 +1,53 @@
 <template>
-    <section class="position-relative sectionWorldOfCamels">
-        <div class="containerNavbar">
-            <div class="d-flex flex-column gap10 text-center">
-                <h2 class="text-h4">لـــوازم الإبـــل</h2>
-                <h2 class="textNavbar">عالمًا من الراحة والتميز لشريكك الثمين</h2>
-                <p class="mt-5 pt-2">ندرك أن للإبل احتياجات عديدة ومستلزمات لا غنى عنها. ومن هنا نسعى جاهدين لتلبية تلك
-                    الاحتياجات بأفضل جودة وأعلى معايير. ونوفر مجموعة واسعة من لوازم الإبل بدءًا من الأعلاف المغذية وصولاً
-                    إلى المعدات والأدوات الضرورية لرعايتها بأسعار مناسبة ومنافسة لتحقيق أفضل قيمة ممكنة لمالكي الإبل.</p>
-            </div>
-        </div>
+    <section class="position-relative sectionWorldOfCamels position-relative sectionSupplies">
+        <component-text-box :propsTextBox="propsTextBox" />
+        <swiper :slidesPerView="slidesPerView" :spaceBetween="20" :centeredSlides="true" class="mt-5 pt-5 swiperSupplies">
+            <swiper-slide class="swiperText rounded-pill py-1 text-center activeTitle font-weight-bold hoverSwiper"
+                v-for="(listSwiper, index) in listSwipers" :key="listSwiper"
+                :class="{ 'activeSwiper': listSwiper.bollenSwpier }" @click="swiperClick(index)">
+                <span>{{ listSwiper.slideSwiper }}</span>
+            </swiper-slide>
+        </swiper>
     </section>
-    <swiper :slidesPerView="6" :spaceBetween="30" :centeredSlides="true" :pagination="{ clickable: true, }"
-        class="mySwiper mt-5 pt-5">
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-        <swiper-slide>Slide 4</swiper-slide>
-        <swiper-slide>Slide 5</swiper-slide>
-        <swiper-slide>Slide 6</swiper-slide>
-        <swiper-slide>Slide 7</swiper-slide>
-    </swiper>
 </template>
 
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 
 export default {
     components: {
         Swiper,
         SwiperSlide,
     },
+
     setup() {
         return {
-            modules: [Pagination],
+            slidesPerView,
         };
     },
 };
+</script>
+
+<script setup>
+const slidesPerView = ref(6);
+const propsTextBox = ref(1);
+const listSwipers = ref([
+    { slideSwiper: "أدوات تنظيف", bollenSwpier: false },
+    { slideSwiper: "أدوية الإبل", bollenSwpier: false },
+    { slideSwiper: "أدوات ربط الإبل", bollenSwpier: false },
+    { slideSwiper: "أدوات الحلاقة", bollenSwpier: false },
+    { slideSwiper: "أدوات الترقيم", bollenSwpier: false },
+    { slideSwiper: "اكسسوارات الزينة", bollenSwpier: false },
+    { slideSwiper: "كل المنتجات", bollenSwpier: true },
+])
+
+const swiperClick = (index) => {
+    listSwipers.value.forEach((item, idx) => {
+        item.bollenSwpier = idx === index;
+    });
+};
+
+onMounted(() => {
+    window.innerWidth <= 990 ? slidesPerView.value = 2 : '';
+});
 </script>

@@ -1,16 +1,7 @@
 <template>
     <section class="position-relative sectionWorldOfCamels">
-        <div class="containerNavbar">
-            <div class="d-flex flex-column gap10 text-center">
-                <h2 class="text-h4">عالم الإبل</h2>
-                <h2 class="textNavbar">في قلب الصحراء، تتألق جوهرة الصمود والقوة في العالم العربي</h2>
-                <p class="mt-5 pt-2">الإبل تحمل في ثناياها روح التراث العربي العريق وتاريخه المجيد. تعزز الاقتصاد وترسخ
-                    الثقافة والهوية العربية، وتعكس قيم الكرامة والضيافة التي تتجذر في تقاليدنا الأصيلة. حفظ تراث الإبل يعد
-                    اهتمامًا بحفظ أصالة العرب وتراثهم العريق. فتلك الجوهرة الثمينة تستحق أن الاهتمام والعناية لتستمر في
-                    تجسيد معانيها العميقة وروعتها في قلوبنا.</p>
-            </div>
-        </div>
-        <swiper class="topSwiperMobile overflow-hidden mySwiper py-3 d-md-none" :centeredSlides="true">
+        <component-text-box :propsTextBox="propsTextBox" />
+        <swiper class="topSwiperMobile overflow-hidden py-3 d-md-none" :centeredSlides="true">
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img src="~/assets/images&icons/imagesWord/imageWorld1.png" alt="" class="swiperImage">
@@ -122,7 +113,7 @@
                 </div>
             </swiper-slide>
         </swiper>
-        <swiper :slidesPerView="4" :spaceBetween="190" class="mySwiper overflow-visible d-none d-md-block"
+        <swiper :slidesPerView="4" :spaceBetween="190" class="overflow-visible d-none d-md-block swiperCamels"
             :centeredSlides="true">
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
@@ -261,6 +252,7 @@
 
 <script setup>
 const indexNumber = ref(1);
+const propsTextBox = ref(0);
 </script>
 
 <script>

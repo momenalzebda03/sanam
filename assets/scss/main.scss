@@ -270,7 +270,7 @@ body header .containerNavbar .listResponse li:nth-child(2) .divButtonAll .divNav
 }
 
 body header .containerNavbar .listResponse li:nth-child(3) .divButtonAll .divNavbarCamel {
-    background: -webkit-linear-gradient(-10deg, $colorMainTow, $colorMainOne);
+    background: -webkit-linear-gradient(-10deg, $colorMainTow, $navbarHump);
     padding-top: 0;
 
     .divBottomGamel {
@@ -495,8 +495,8 @@ body .sectionWorldOfCamels .containerNavbar div .textNavbar {
     color: $hoverNavbar;
 }
 
-body .sectionWorldOfCamels .mySwiper,
-body .sectionWorldOfCamels {
+body .sectionWorldOfCamels,
+body .sectionWorldOfCamels .swiperCamels {
     margin-top: 70px;
 }
 
@@ -507,21 +507,21 @@ body .sectionWorldOfCamels::before {
     bottom: 80px;
 }
 
-body .sectionWorldOfCamels .mySwiper .imageColor .textBottom1,
-body .sectionWorldOfCamels .mySwiper .imageColor1::before,
-body .sectionWorldOfCamels .mySwiper .imageColor1 .swiperImage {
+body .sectionWorldOfCamels .imageColor .textBottom1,
+body .sectionWorldOfCamels .imageColor1::before,
+body .sectionWorldOfCamels .imageColor1 .swiperImage {
     width: 380px !important;
     border-radius: 20px !important;
 }
 
-body .sectionWorldOfCamels .mySwiper .imageColor .textBottom1 {
+body .sectionWorldOfCamels .imageColor .textBottom1 {
     transition: 0.5s;
     bottom: 15px;
     left: 0;
     z-index: 1;
 }
 
-body .sectionWorldOfCamels .mySwiper .swiper-slide-active {
+body .sectionWorldOfCamels .swiper-slide-active {
 
     .imageColor1::before,
     .swiperImage {
@@ -554,12 +554,12 @@ body .sectionWorldOfCamels .mySwiper .swiper-slide-active {
     }
 }
 
-body .sectionWorldOfCamels .mySwiper .imageColor1 .textBottom1 .hoverImage .divCircle {
+body .sectionWorldOfCamels .imageColor1 .textBottom1 .hoverImage .divCircle {
     width: 80px;
     height: 80px;
 }
 
-body .sectionWorldOfCamels .mySwiper .imageColor1 .textBottom1 .hoverImage .iconSize {
+body .sectionWorldOfCamels .imageColor1 .textBottom1 .hoverImage .iconSize {
     font-size: 25px;
 }
 
@@ -581,12 +581,28 @@ body .containerNavbar .sectionShepherd div .tagSize28 {
 }
 
 // end Shepherd
+// start camel Supplies
+.swiperText {
+    background-color: $colorSupplies;
+}
+
+.activeSwiper {
+    color: $colorWhite;
+    background-color: $navbarHump;
+}
+
+.hoverSwiper:hover {
+    cursor: pointer;
+    background-color: $colorHoverCarousle;
+}
+
+// end camel Supplies
 // start media
 @media (max-width: 1600px) {
 
-    body .sectionWorldOfCamels .mySwiper .imageColor .textBottom1,
-    body .sectionWorldOfCamels .mySwiper .imageColor1::before,
-    body .sectionWorldOfCamels .mySwiper .imageColor1 .swiperImage {
+    body .sectionWorldOfCamels .imageColor .textBottom1,
+    body .sectionWorldOfCamels .imageColor1::before,
+    body .sectionWorldOfCamels .imageColor1 .swiperImage {
         border-radius: 20px !important;
         width: 120%;
     }
@@ -669,13 +685,13 @@ body .containerNavbar .sectionShepherd div .tagSize28 {
         bottom: -50px;
     }
 
-    body .sectionWorldOfCamels .mySwiper .imageColor .textBottom1,
-    body .sectionWorldOfCamels .mySwiper .imageColor1::before,
-    body .sectionWorldOfCamels .mySwiper .imageColor1 .swiperImage {
+    body .sectionWorldOfCamels .imageColor .textBottom1,
+    body .sectionWorldOfCamels .imageColor1::before,
+    body .sectionWorldOfCamels .imageColor1 .swiperImage {
         width: 90% !important;
     }
 
-    body .sectionWorldOfCamels .mySwiper .swiper-slide-active {
+    body .sectionWorldOfCamels .swiper-slide-active {
 
         .imageColor1::before,
         .swiperImage {
@@ -683,16 +699,16 @@ body .containerNavbar .sectionShepherd div .tagSize28 {
         }
     }
 
-    body .sectionWorldOfCamels .mySwiper,
+    body .sectionWorldOfCamels,
     body .sectionWorldOfCamels {
         margin-top: 50px !important;
     }
 
-    body .sectionWorldOfCamels .mySwiper .imageColor .textBottom1 {
+    body .sectionWorldOfCamels .imageColor .textBottom1 {
         bottom: 120px;
     }
 
-    body .sectionWorldOfCamels .mySwiper .imageColor1 .textBottom1 .hoverImage .divCircle {
+    body .sectionWorldOfCamels .imageColor1 .textBottom1 .hoverImage .divCircle {
         width: 40px;
         height: 40px;
     }
@@ -705,11 +721,11 @@ body .containerNavbar .sectionShepherd div .tagSize28 {
         font-size: 14px;
     }
 
-    body .sectionWorldOfCamels .mySwiper .imageColor1 .textBottom1 .hoverImage .iconSize {
+    body .sectionWorldOfCamels .imageColor1 .textBottom1 .hoverImage .iconSize {
         font-size: 15px;
     }
 
-    body .sectionWorldOfCamels .mySwiper .imageColor1 .textBottom1 .hoverImage {
+    body .sectionWorldOfCamels .imageColor1 .textBottom1 .hoverImage {
         width: 95%;
         display: flex !important;
     }
