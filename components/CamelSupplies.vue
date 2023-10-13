@@ -10,18 +10,22 @@
         </swiper>
         <v-row class="mt-5 pt-5 gapRow">
             <v-col cols="12" md="6" lg="3">
-                <div class="rounded-lg">
-                    <router-link to="/"
-                        class="border d-flex justify-center align-center text-black divCardSupplies position-relative">
-                        <img src="~/assets/images&icons/imagesSupplies/imageHeadband.png" alt="" class="imageHeadband">
+                <router-link to="/" class="position-relative text-decoration-none hoverBoxRouter">
+                    <div class="position-absolute divHeart rounded-circle hoverText" @click="functionHeartAnimation"
+                        :class="{ 'divHeartAnimation': isAnimating }">
+                        <img src="~/assets/images&icons/imagesSupplies/heart.svg" alt="">
+                    </div>
+                    <div class="border d-flex justify-center align-center text-black divCardSupplies position-relative">
+                        <img src="~/assets/images&icons/imagesSupplies/imageHeadband.png" alt=""
+                            class="imageHeadband tagTransition">
                         <div class="divHoverSupplies d-flex justify-center flex-column gap10">
-                            <div class="divSuppliesBox text-center">
+                            <div class="divSuppliesBox text-center tagTransition">
                                 <img src="~/assets/images&icons/imagesSupplies/arrows.png" alt="">
                                 <h2 class="activeTitle">أنقر</h2>
                                 <span class="font-weight-bold">لعرض تفاصيل المنتج</span>
                             </div>
                         </div>
-                    </router-link>
+                    </div>
                     <div class="border d-flex justify-space-between align-center py-4 px-4 bg-white divShadowSupplies">
                         <div class="py-4 px-3 divMoney rounded-lg h-0 d-flex align-center">
                             <span class="sizeText14">ريال 25.50</span>
@@ -31,7 +35,7 @@
                             <span class="textSuppliesBox">يوضع العقال على الإبل مـ ...</span>
                         </div>
                     </div>
-                </div>
+                </router-link>
             </v-col>
             <v-col cols="12" md="6" lg="3">
                 <p>welcome</p>
@@ -78,6 +82,7 @@ export default {
 <script setup>
 const slidesPerView = ref(6);
 const propsTextBox = ref(1);
+const isAnimating = ref(false);
 const listSwipers = ref([
     { slideSwiper: "أدوات تنظيف", bollenSwpier: false },
     { slideSwiper: "أدوية الإبل", bollenSwpier: false },
@@ -92,6 +97,13 @@ const swiperClick = (index) => {
     listSwipers.value.forEach((item, idx) => {
         item.bollenSwpier = idx === index;
     });
+};
+
+const functionHeartAnimation = () => {
+    isAnimating.value = true;
+    setTimeout(() => {
+        isAnimating.value = false;
+    }, 1000);
 };
 
 onMounted(() => {

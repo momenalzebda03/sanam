@@ -8,7 +8,6 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 20px;
     background: $hoverNavbar;
 }
 
@@ -186,7 +185,7 @@ li {
     height: 35px;
 }
 
-.divTextHeight .hoverText {
+.hoverText {
     transition: 0.3s;
 }
 
@@ -515,7 +514,6 @@ body .sectionWorldOfCamels .imageColor1 .swiperImage {
 }
 
 body .sectionWorldOfCamels .imageColor .textBottom1 {
-    transition: 0.5s;
     bottom: 15px;
     left: 0;
     z-index: 1;
@@ -601,30 +599,23 @@ body .containerNavbar .sectionShepherd div .tagSize28 {
     padding-bottom: 40px;
     background-color: $colorCard;
     border-radius: 10px 10px 0 0;
-
-    img {
-        transition: 0.5s;
-    }
 }
 
-.divCardSupplies::before {
-    content: url("/assets/images&icons/imagesSupplies/heart.svg");
-    position: absolute;
-    background-color: $colorCard;
-    border-radius: 50%;
+.divHeart {
     right: 18px;
     top: 18px;
+    background-color: $colorCard;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     z-index: 1;
-    transition: 0.5s;
 }
 
-.divCardSupplies:hover::before {
-    background-color: #FF0000;
+.divHeart:hover {
+    width: 35px;
+    height: 35px;
 }
 
 .divShadowSupplies {
@@ -643,18 +634,18 @@ body .containerNavbar .sectionShepherd div .tagSize28 {
     color: $colorTextSupplies;
 }
 
-.divCardSupplies:hover {
+.hoverBoxRouter:hover {
     .imageHeadband {
         transform: scale(1.3) rotate(-10deg);
     }
 
     .divHoverSupplies {
-        width: 92%;
-        height: 92%;
+        width: 95%;
+        height: 95%;
 
         .divSuppliesBox {
             img {
-                width: 20%;
+                width: 12%;
             }
 
             font-size: 14px;
@@ -676,7 +667,24 @@ body .containerNavbar .sectionShepherd div .tagSize28 {
         }
 
         font-size: 0;
-        transition: 0.5s;
+    }
+}
+
+.divHeartAnimation {
+    animation: animationHeart 1s infinite;
+}
+
+@keyframes animationHeart {
+    0% {
+        background-color: red !important;
+    }
+
+    50% {
+        background-color: black !important;
+    }
+
+    100% {
+        background-color: white !important;
     }
 }
 

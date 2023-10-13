@@ -5,7 +5,7 @@
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img src="~/assets/images&icons/imagesWord/imageWorld1.png" alt="" class="swiperImage">
-                    <div class="position-absolute textBottom textBottom1 text-center">
+                    <div class="position-absolute textBottom textBottom1 tagTransition text-center">
                         <div class="hoverImage tagTransition d-flex justify-space-between position-absolute align-end">
                             <router-link to="/"
                                 class="rounded-circle borderWhite divCircle d-flex justify-center align-center text-white text-decoration-none">
@@ -27,7 +27,7 @@
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img src="~/assets/images&icons/imagesWord/imageWorld2.png" alt="" class="swiperImage">
-                    <div class="position-absolute textBottom textBottom1 text-center">
+                    <div class="position-absolute textBottom textBottom1 tagTransition text-center">
                         <div class="hoverImage tagTransition d-flex justify-space-between position-absolute align-end">
                             <router-link to="/"
                                 class="rounded-circle borderWhite divCircle d-flex justify-center align-center text-white text-decoration-none">
@@ -49,7 +49,7 @@
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img src="~/assets/images&icons/imagesWord/imageWorld3.png" alt="" class="swiperImage">
-                    <div class="position-absolute textBottom textBottom1 text-center">
+                    <div class="position-absolute textBottom textBottom1 tagTransition text-center">
                         <div class="hoverImage tagTransition d-flex justify-space-between position-absolute align-end">
                             <router-link to="/"
                                 class="rounded-circle borderWhite divCircle d-flex justify-center align-center text-white text-decoration-none">
@@ -71,7 +71,7 @@
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img src="~/assets/images&icons/imagesWord/imageWorld1.png" alt="" class="swiperImage">
-                    <div class="position-absolute textBottom textBottom1 text-center">
+                    <div class="position-absolute textBottom textBottom1 tagTransition text-center">
                         <div class="hoverImage tagTransition d-flex justify-space-between position-absolute align-end">
                             <router-link to="/"
                                 class="rounded-circle borderWhite divCircle d-flex justify-center align-center text-white text-decoration-none">
@@ -93,7 +93,7 @@
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img src="~/assets/images&icons/imagesWord/imageWorld2.png" alt="" class="swiperImage">
-                    <div class="position-absolute textBottom textBottom1 text-center">
+                    <div class="position-absolute textBottom textBottom1 tagTransition text-center">
                         <div class="hoverImage tagTransition d-flex justify-space-between position-absolute align-end">
                             <router-link to="/"
                                 class="rounded-circle borderWhite divCircle d-flex justify-center align-center text-white text-decoration-none">
@@ -118,7 +118,7 @@
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img src="~/assets/images&icons/imagesWord/imageWorld1.png" alt="" class="swiperImage">
-                    <div class="position-absolute textBottom textBottom1 text-center">
+                    <div class="position-absolute textBottom textBottom1 tagTransition text-center">
                         <div class="opacity0 tagTransition">
                             <h2 class="text-h5">رمز للتكيف</h2>
                             <h3 class="text-h6">جسد متفرد بقدرات هائلة</h3>
@@ -144,7 +144,7 @@
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img src="~/assets/images&icons/imagesWord/imageWorld2.png" alt="" class="swiperImage">
-                    <div class="position-absolute textBottom textBottom1 text-center">
+                    <div class="position-absolute textBottom textBottom1 tagTransition text-center">
                         <div class="opacity0 tagTransition">
                             <h2 class="text-h5">رحلة عبر الزمن</h2>
                             <h3 class="text-h6">الإبل في الثقافة والتاريخ</h3>
@@ -170,7 +170,7 @@
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img src="~/assets/images&icons/imagesWord/imageWorld3.png" alt="" class="swiperImage">
-                    <div class="position-absolute textBottom textBottom1 text-center">
+                    <div class="position-absolute textBottom textBottom1 tagTransition text-center">
                         <div class="opacity0 tagTransition">
                             <h2 class="text-h5">نهضة حضارية</h2>
                             <h3 class="text-h6">دور الإبل في الاقتصاد</h3>
@@ -196,7 +196,7 @@
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img src="~/assets/images&icons/imagesWord/imageWorld1.png" alt="" class="swiperImage">
-                    <div class="position-absolute textBottom textBottom1 text-center">
+                    <div class="position-absolute textBottom textBottom1 tagTransition text-center">
                         <div class="opacity0 tagTransition">
                             <h2 class="text-h5">رمز للتكيف</h2>
                             <h3 class="text-h6">جسد متفرد بقدرات هائلة</h3>
@@ -222,7 +222,7 @@
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img src="~/assets/images&icons/imagesWord/imageWorld2.png" alt="" class="swiperImage">
-                    <div class="position-absolute textBottom textBottom1 text-center">
+                    <div class="position-absolute textBottom textBottom1 tagTransition text-center">
                         <div class="opacity0 tagTransition">
                             <h2 class="text-h5">رحلة عبر الزمن</h2>
                             <h3 class="text-h6">الإبل في الثقافة والتاريخ</h3>
