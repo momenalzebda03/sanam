@@ -6,7 +6,9 @@
     <WorldOfCamels />
     <Shepherd />
     <camel-supplies />
+    <camelfarms />
+    <camel-services />
     <div v-for="post in 10" :key="post">
-        <p>hi</p>
+        <p>welcome</p>
     </div>
 </template>

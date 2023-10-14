@@ -26,6 +26,20 @@
             </div>
         </router-link>
     </div>
+    <div class="d-flex justify-end my-5" v-if="props.indexNumber == 2">
+        <router-link to="/"
+            class="py-3 widthMobile w-50 divButton rounded-pill position-relative overflow-hidden text-white text-decoration-none borderWhite">
+            <div class="ps-4 d-flex align-center position-relative">
+                <div class="bg-white imageButton rounded-circle d-flex justify-center align-center pe-1">
+                    <img src="~/assets/images&icons/imagesAll/iconArrawLeft.svg" alt="">
+                </div>
+                <div class="text-center w-100 textButton tagTransition me-5 me-md-0">
+                    <span class="d-md-none text-h5 text-black">الاشتراك بمزاين الإبل</span>
+                    <span class="d-none d-md-block text-h5">أخبـار مـزايـن الإبـل</span>
+                </div>
+            </div>
+        </router-link>
+    </div>
 </template>
 
 <script setup>

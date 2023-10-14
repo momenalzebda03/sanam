@@ -1,7 +1,7 @@
 <template>
     <section class="position-relative sectionWorldOfCamels">
         <component-text-box :propsTextBox="propsTextBox" />
-        <swiper class="topSwiperMobile overflow-hidden py-3 d-md-none" :centeredSlides="true">
+        <swiper class="topSwiperMobile overflow-hidden d-md-none mt-5 pt-5" :centeredSlides="true">
             <swiper-slide>
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img src="~/assets/images&icons/imagesWord/imageWorld1.png" alt="" class="swiperImage">
