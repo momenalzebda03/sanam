@@ -823,6 +823,10 @@ body .containerNavbar .divImageBlack:hover {
 
 // end camel services
 // start footer center
+body .sectionCenter {
+    z-index: 1;
+}
+
 body .containerNavbar .sectionFooterCenter {
     background-color: $hoverNavbar;
 }
@@ -844,15 +848,32 @@ body .containerNavbar .sectionFooterCenter form div .activeLabel {
     color: #333;
 }
 
-input:focus-visible {
+body .containerNavbar .sectionFooterCenter form div input:focus-visible {
     outline: transparent !important;
 }
 
-.inputSubmit:hover {
+body .containerNavbar .sectionFooterCenter form .inputSubmit:hover {
     background-color: $colorhoverInput;
 }
 
+body .containerNavbar .sectionFooterCenter form div input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
 // end footer center
+// start footer
+.sectionFooter {
+    padding-top: 170px;
+    margin-top: 200px;
+    background-color: $colorSuppliesMoney;
+}
+
+.rowGap1 {
+    row-gap: 14px;
+}
+
+// end footer
 // start media
 @media (max-width: 1600px) {
 
@@ -1021,6 +1042,17 @@ input:focus-visible {
         100% {
             transform: translateX(calc(250px * 7))
         }
+    }
+
+    body .sectionFooter {
+        padding-top: 660px;
+        margin-top: 0;
+        background-color: transparent;
+    }
+
+    body .sectionFooter .activeTitle {
+        background-color: $colorTextFooter;
+        text-align: center;
     }
 }
 
