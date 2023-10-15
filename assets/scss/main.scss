@@ -208,6 +208,11 @@ li {
     row-gap: 20px;
 }
 
+.activeSwiper {
+    color: $colorWhite;
+    background-color: $navbarHump;
+}
+
 // end public
 // start navbar
 body header {
@@ -590,11 +595,6 @@ body .containerNavbar .sectionShepherd div .tagSize28 {
     background-color: $colorSupplies;
 }
 
-.activeSwiper {
-    color: $colorWhite;
-    background-color: $navbarHump;
-}
-
 body .sectionWorldOfCamels .hoverSwiper:hover {
     cursor: pointer;
     background-color: $colorHoverCarousle;
@@ -822,6 +822,30 @@ body .containerNavbar .divImageBlack:hover {
 }
 
 // end camel services
+// start footer center
+.sectionFooterCenter {
+    background-color: $hoverNavbar;
+}
+
+.form__label {
+    top: 20px;
+    right: 20px;
+    transition: 0.2s;
+    color: $colorTextSupplies;
+}
+
+.form__field:focus {
+    ~.form__label {
+        top: 0;
+        transition: 0.2s;
+    }
+}
+
+.inputSubmit:hover {
+    background-color: $colorhoverInput;
+}
+
+// end footer center
 // start media
 @media (max-width: 1600px) {
 

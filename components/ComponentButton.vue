@@ -40,6 +40,19 @@
             </div>
         </router-link>
     </div>
+    <div class="d-flex justify-center divWithdBlack" v-if="props.indexNumber == 3">
+        <router-link to="/"
+            class="mt-5 py-3 divButton divButtonBlack rounded-pill position-relative overflow-hidden text-black text-decoration-none borderBlack">
+            <div class="ps-4 d-flex align-center position-relative">
+                <div class="bg-black imageButton rounded-circle d-flex justify-center align-center pe-1">
+                    <img src="~/assets/images&icons/imagesAll/iconArrawLeft.svg" alt="" class="imageWhite">
+                </div>
+                <div class="text-center w-100 textButton tagTransition me-5 me-md-0">
+                    <span class="text-h5">جميع خدمات الإبل</span>
+                </div>
+            </div>
+        </router-link>
+    </div>
 </template>
 
 <script setup>

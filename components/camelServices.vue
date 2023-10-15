@@ -75,8 +75,10 @@
             </v-col>
         </v-row>
     </section>
+    <component-button :indexNumber="indexNumber"/>
 </template>
 
 <script setup>
 const propsTextBox = ref(2);
+const indexNumber = ref(3);
 </script>
