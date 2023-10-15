@@ -208,7 +208,7 @@ li {
     row-gap: 20px;
 }
 
-.activeSwiper {
+body .activeSwiper {
     color: $colorWhite;
     background-color: $navbarHump;
 }
@@ -823,22 +823,29 @@ body .containerNavbar .divImageBlack:hover {
 
 // end camel services
 // start footer center
-.sectionFooterCenter {
+body .containerNavbar .sectionFooterCenter {
     background-color: $hoverNavbar;
 }
 
-.form__label {
-    top: 20px;
+body .containerNavbar .sectionFooterCenter form div .formLabel {
+    position: absolute;
+    top: 50%;
     right: 20px;
-    transition: 0.2s;
-    color: $colorTextSupplies;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.2s ease all;
+    color: #888;
 }
 
-.form__field:focus {
-    ~.form__label {
-        top: 0;
-        transition: 0.2s;
-    }
+body .containerNavbar .sectionFooterCenter form div .activeLabel {
+    top: 10px;
+    transform: translateY(0);
+    font-size: 10px;
+    color: #333;
+}
+
+input:focus-visible {
+    outline: transparent !important;
 }
 
 .inputSubmit:hover {
