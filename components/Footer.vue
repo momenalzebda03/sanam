@@ -39,79 +39,133 @@
         </div>
     </section>
     <!-- start footer -->
-    <section class="sectionFooter">
+    <footer class="sectionFooter">
         <v-container>
             <v-row>
                 <v-col cols="6" md="3" class="text-end">
                     <h2 class="font-weight-bold activeTitle py-5 rounded-xl">خدمات الإبل</h2>
-                    <ul class="d-md-flex flex-column rowGap1 d-none">
-                        <li>الخدمات الإستشارية</li>
-                        <li>خدمات نقل الإبل</li>
-                        <li>خدمات العناية والنظافة</li>
-                        <li>خدمات طبية</li>
+                    <ul class="d-md-flex flex-column rowGap1 d-none align-end">
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">الخدمات الإستشارية</li>
+                        </router-link>
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">خدمات نقل الإبل</li>
+                        </router-link>
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">خدمات العناية والنظافة</li>
+                        </router-link>
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">خدمات طبية</li>
+                        </router-link>
                     </ul>
                 </v-col>
                 <v-col cols="6" md="3" class="text-end">
                     <h2 class="font-weight-bold activeTitle py-5 rounded-xl">لوازم الإبل</h2>
-                    <ul class="d-md-flex flex-column rowGap1 d-none">
-                        <li>منتجات العناية والنظافة </li>
-                        <li>منتجات غذاء الإبل</li>
-                        <li>منتجات الرعاية الصحية</li>
-                        <li>منتجات واكسسوارات الزينة</li>
+                    <ul class="d-md-flex flex-column rowGap1 d-none align-end">
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">منتجات العناية والنظافة </li>
+                        </router-link>
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">منتجات غذاء الإبل</li>
+                        </router-link>
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">منتجات الرعاية الصحية</li>
+                        </router-link>
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">منتجات واكسسوارات الزينة</li>
+                        </router-link>
                     </ul>
                 </v-col>
                 <v-col cols="6" md="3" class="text-end">
                     <h2 class="font-weight-bold activeTitle py-5 rounded-xl">عالم الإبل</h2>
-                    <ul class="d-md-flex flex-column rowGap1 d-none">
-                        <li>الإبل والتاريخ</li>
-                        <li>الإبل والثقافة</li>
-                        <li>الإبل والفنون</li>
-                        <li>الإبل والاقتصاد</li>
+                    <ul class="d-md-flex flex-column rowGap1 d-none align-end">
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">الإبل والتاريخ</li>
+                        </router-link>
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">الإبل والثقافة</li>
+                        </router-link>
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">الإبل والفنون</li>
+                        </router-link>
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">الإبل والاقتصاد</li>
+                        </router-link>
                     </ul>
                 </v-col>
                 <v-col cols="6" md="3" class="text-end">
                     <h2 class="font-weight-bold activeTitle py-5 rounded-xl">من سنام</h2>
-                    <ul class="d-md-flex flex-column rowGap1 d-none">
-                        <li>قصتنا وأهدافنا</li>
-                        <li>رؤيتنا وقيمتنا</li>
-                        <li>تواصل معنا</li>
+                    <ul class="d-md-flex flex-column rowGap1 d-none align-end">
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">قصتنا وأهدافنا</li>
+                        </router-link>
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">رؤيتنا وقيمتنا</li>
+                        </router-link>
+                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
+                            <li class="tagTransition">تواصل معنا</li>
+                        </router-link>
                     </ul>
                 </v-col>
             </v-row>
         </v-container>
-        <div class="containerNavbar my-5">
-            <hr>
-            <v-row class="mt-3 align-center flex-column flex-md-row">
+        <div class="containerNavbar">
+            <hr class="my-5">
+            <v-row class="flex-column flex-md-row align-center">
                 <v-col class="d-md-none">
-                    <div class="justify-center justify-md-end d-flex gap25">
-                        <router-link to="/" class="text-h6 text-decoration-none text-black">
-                            الشروط والأحكام
-                        </router-link>
-                        <router-link to="/" class="text-h6 text-decoration-none text-black">
-                            الشروط والأحكام
-                        </router-link>
-                    </div>
+                    <ul class="justify-center justify-md-end d-flex gap25">
+                        <li>
+                            <router-link to="/" class="text-h6 text-decoration-none text-black">
+                                الشروط والأحكام
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link to="/" class="text-h6 text-decoration-none text-black">
+                                الشروط والأحكام
+                            </router-link>
+                        </li>
+                    </ul>
                 </v-col>
                 <v-col>
-                    <ul class="d-flex justify-md-start justify-center gap10">
-                        <li>
+                    <ul class="d-flex justify-md-start justify-center gap25 mt-2">
+                        <li class="d-flex flex-column overflow-hidden liHeight align-center">
                             <router-link to="/">
-                                <img src="~/assets/images&icons/imagesFooter/iconFacebook.svg" alt="">
+                                <img src="~/assets/images&icons/imagesFooter/iconFacebook.svg" alt=""
+                                    class="linkListFooter tagTransition">
+                            </router-link>
+                            <router-link to="/">
+                                <img src="~/assets/images&icons/imagesFooter/iconfacebookOrange.svg" alt=""
+                                    class="linkListFooter tagTransition">
                             </router-link>
                         </li>
-                        <li>
+                        <li class="d-flex flex-column overflow-hidden liHeight align-center">
                             <router-link to="/">
-                                <img src="~/assets/images&icons/imagesFooter/iconInsgrame.svg" alt="">
+                                <img src="~/assets/images&icons/imagesFooter/iconTwitter.svg" alt=""
+                                    class="linkListFooter tagTransition">
+                            </router-link>
+                            <router-link to="/">
+                                <img src="~/assets/images&icons/imagesFooter/iconTwitterOrange.svg" alt=""
+                                    class="linkListFooter tagTransition">
                             </router-link>
                         </li>
-                        <li>
+                        <li class="d-flex flex-column overflow-hidden liHeight align-center">
                             <router-link to="/">
-                                <img src="~/assets/images&icons/imagesFooter/iconTwiiter.svg" alt="">
+                                <img src="~/assets/images&icons/imagesFooter/iconinstagram.svg" alt=""
+                                    class="linkListFooter tagTransition">
+                            </router-link>
+                            <router-link to="/">
+                                <img src="~/assets/images&icons/imagesFooter/iconinstagramOrange.svg" alt=""
+                                    class="linkListFooter tagTransition">
                             </router-link>
                         </li>
-                        <li>
+                        <li class="d-flex flex-column overflow-hidden liHeight align-center">
                             <router-link to="/">
-                                <img src="~/assets/images&icons/imagesFooter/iconLinkin.svg" alt="">
+                                <img src="~/assets/images&icons/imagesFooter/iconLinkid.svg" alt=""
+                                    class="linkListFooter tagTransition">
+                            </router-link>
+                            <router-link to="/">
+                                <img src="~/assets/images&icons/imagesFooter/iconLinkedInOrange.svg" alt=""
+                                    class="linkListFooter tagTransition">
                             </router-link>
                         </li>
                     </ul>
@@ -123,17 +177,17 @@
                 </v-col>
                 <v-col class="d-none d-md-block">
                     <div class="justify-center justify-md-end d-flex gap25">
-                        <router-link to="/" class="text-h6 text-decoration-none text-black">
+                        <router-link to="/" class="text-h6 text-decoration-none text-black linkFooter">
                             سياسات الخصوصية
                         </router-link>
-                        <router-link to="/" class="text-h6 text-decoration-none text-black">
+                        <router-link to="/" class="text-h6 text-decoration-none text-black linkFooter">
                             الشروط والأحكام
                         </router-link>
                     </div>
                 </v-col>
             </v-row>
         </div>
-    </section>
+    </footer>
     <!-- end footer -->
 </template>
 

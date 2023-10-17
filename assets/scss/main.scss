@@ -38,8 +38,9 @@ li {
     }
 }
 
+body .sectionFooter .containerNavbar div .linkFooter:hover,
 .activeTitle {
-    color: $navbarHump;
+    color: $navbarHump !important;
 }
 
 .containerNavbar {
@@ -863,14 +864,50 @@ body .containerNavbar .sectionFooterCenter form div input[type=checkbox] {
 
 // end footer center
 // start footer
-.sectionFooter {
+body .sectionFooter {
     padding-top: 170px;
     margin-top: 200px;
     background-color: $colorSuppliesMoney;
 }
 
-.rowGap1 {
+body .sectionFooter .rowGap1 {
     row-gap: 14px;
+}
+
+body .sectionFooter .rowGap1 .listLiFooter::before {
+    content: "";
+    position: absolute;
+    background-color: $navbarHump;
+    width: 0;
+    height: 4px;
+    top: 45%;
+    right: 0;
+    transition: 0.5s;
+}
+
+body .sectionFooter .rowGap1 .listLiFooter:hover {
+    li {
+        margin-right: 30px;
+    }
+}
+
+body .sectionFooter .rowGap1 .listLiFooter:hover::before {
+    width: 20px;
+}
+
+body .sectionFooter div ul .liHeight {
+    height: 30px;
+}
+
+body .sectionFooter div ul .liHeight .linkListFooter {
+    width: 25px;
+    height: 25px;
+}
+
+body .sectionFooter div ul .liHeight:hover {
+    .linkListFooter {
+        transform: translate(0, -30px);
+    }
 }
 
 // end footer

@@ -16,13 +16,11 @@
     </div>
     <div class="w-100 d-flex justify-center justify-md-end" v-if="props.indexNumber == 1">
         <div class="d-flex align-center overflow-hidden flex-column divTextHeight">
-            <router-link to="/"
-                class="d-flex gap25 align-center justify-center activeTitle text-decoration-none hoverText text-white">
+            <router-link to="/" class="d-flex gap25 align-center justify-center text-decoration-none hoverText text-white">
                 <i class="fas fa-chevron-left"></i>
                 <span class="text-h5 font-weight-bold text-no-wrap">نادي الإبل السعودي</span>
             </router-link>
-            <router-link to="/"
-                class="d-flex gap25 align-center justify-center activeTitle text-decoration-none text-white">
+            <router-link to="/" class="d-flex gap25 align-center justify-center text-decoration-none text-white">
                 <i class="fas fa-chevron-left"></i>
                 <span class="text-h5 font-weight-bold text-no-wrap">نادي الإبل السعودي</span>
             </router-link>
