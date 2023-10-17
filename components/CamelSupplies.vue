@@ -1,8 +1,9 @@
 <template>
     <section class="sectionWorldOfCamels containerNavbar">
         <component-text-box :propsTextBox="propsTextBox" />
-        <swiper :slidesPerView="slidesPerView" :spaceBetween="20" :centeredSlides="true" class="mt-5 pt-5 swiperSupplies">
-            <swiper-slide class="swiperText rounded-pill py-1 text-center activeTitle font-weight-bold hoverSwiper"
+        <swiper :slidesPerView="slidesPerView" :spaceBetween="20" :centeredSlides="true" class="mt-5 pt-5 swiperSupplies"
+            :initialSlide="4">
+            <swiper-slide class="swiperText rounded-pill py-1 text-center font-weight-bold hoverSwiper"
                 v-for="(listSwiper, index) in listSwipers" :key="listSwiper"
                 :class="{ 'activeSwiper': listSwiper.bollenSwpier }" @click="swiperClick(index)">
                 <span>{{ listSwiper.slideSwiper }}</span>
@@ -63,7 +64,7 @@ export default {
 <script setup>
 const indexNumber = ref(1);
 const slidesPerView = ref(6);
-const propsTextBox = ref(1);
+const propsTextBox = ref(2);
 const listSwipers = ref([
     { slideSwiper: 'أدوات تنظيف', id: 'CamelHeadband', bollenSwpier: false },
     { slideSwiper: 'أدوية الإبل', id: 'FadamaShabak', bollenSwpier: false },

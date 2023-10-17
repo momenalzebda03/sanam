@@ -90,50 +90,23 @@
                             </swiper-slide>
                         </swiper>
                     </div>
-                    <div class="bg-white d-md-flex divBoxNews gapIcon justify-end px-5 py-5 d-none">
-                        <router-link to="/"
-                            class="d-flex gap25 text-decoration-none hoverCard position-relative justify-end align-center">
-                            <div class="text-end d-flex justify-end flex-column position-relative w-50">
-                                <span class="textCard">١٢ مشروع ريادي في المملكة يستهدف هواة وملاك الإبل في
-                                    مجال ا.....</span>
-                                <div class="text-end">
-                                    <span class="text-h6 font-weight-bold activeTitle hoverPlus w-75"><i
-                                            class="fas fa-plus iconPlus"></i> متابعة المزيد</span>
+                    <ul class="bg-white d-md-flex divBoxNews gapIcon justify-end px-5 py-5 d-none">
+                        <li v-for="arrayCard in arrayCards" :key="arrayCard">
+                            <router-link to="/"
+                                class="d-flex gap25 text-decoration-none hoverCard position-relative justify-end align-center">
+                                <div class="text-end d-flex justify-end flex-column position-relative w-50">
+                                    <span class="textCard">{{ arrayCard.textCatd }}</span>
+                                    <div class="text-end">
+                                        <span class="text-h6 font-weight-bold activeTitle hoverPlus"><i
+                                                class="fas fa-plus iconPlus me-3"></i>{{ arrayCard.readMore }}</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="position-relative">
-                                <img src="~/assets/images&icons/images&viedoMain/imageNews3.png" alt="" class="rounded-lg">
-                            </div>
-                        </router-link>
-                        <router-link to="/"
-                            class="d-flex gap25 text-decoration-none hoverCard position-relative justify-end align-center">
-                            <div class="text-end d-flex justify-end flex-column position-relative w-50">
-                                <span class="textCard">برعاية سمو الأمير محمد بن سلمان يتم إفتتاح أول مستشفى مختص بالـ .....
-                                </span>
-                                <div class="text-end">
-                                    <span class="text-h6 font-weight-bold activeTitle hoverPlus w-75"><i
-                                            class="fas fa-plus iconPlus"></i> متابعة المزيد</span>
+                                <div class="position-relative">
+                                    <img :src="arrayCard.imageCard" alt="" class="rounded-lg">
                                 </div>
-                            </div>
-                            <div class="position-relative">
-                                <img src="~/assets/images&icons/images&viedoMain/imageNews2.png" alt="" class="rounded-lg">
-                            </div>
-                        </router-link>
-                        <router-link to="/"
-                            class="d-flex gap25 text-decoration-none hoverCard position-relative justify-end align-center">
-                            <div class="text-end d-flex justify-end flex-column position-relative w-50">
-                                <span class="textCard">مزاين الإبل تبداً في العاشر من شهر أيلول تحت إشراف صاحب
-                                    السـ ..... </span>
-                                <div class="text-end">
-                                    <span class="text-h6 font-weight-bold activeTitle hoverPlus w-75"><i
-                                            class="fas fa-plus iconPlus"></i> متابعة المزيد</span>
-                                </div>
-                            </div>
-                            <div class="position-relative">
-                                <img src="~/assets/images&icons/images&viedoMain/imageNews1.png" alt="" class="rounded-lg">
-                            </div>
-                        </router-link>
-                    </div>
+                            </router-link>
+                        </li>
+                    </ul>
                 </v-col>
             </v-row>
         </div>
@@ -142,6 +115,17 @@
 
 <script setup>
 const indexNumber = ref(0);
+const arrayCards = ref([
+    {
+        textCatd: '١٢ مشروع ريادي في المملكة يستهدف هواة وملاك الإبل في مجال ا.....', readMore: 'متابعة المزيد', imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/images&viedoMain/imageNews3.png'
+    },
+    {
+        textCatd: 'برعاية سمو الأمير محمد بن سلمان يتم إفتتاح أول مستشفى مختص بالـ .....', readMore: 'متابعة المزيد', imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/images&viedoMain/imageNews2.png'
+    },
+    {
+        textCatd: 'مزاين الإبل تبداً في العاشر من شهر أيلول تحت إشراف صاحب السـ .....', readMore: 'متابعة المزيد', imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/images&viedoMain/imageNews1.png'
+    }
+])
 function scrollToElement() {
     const scrollPosition = 660;
     window.scrollTo({

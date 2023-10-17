@@ -39,7 +39,7 @@ li {
 }
 
 body .sectionFooter .containerNavbar div .linkFooter:hover,
-.activeTitle {
+.activeTitle { 
     color: $navbarHump !important;
 }
 
@@ -505,6 +505,10 @@ body .sectionCardsSanam .containerNavbar .divCard .imageBackgroundCards {
 
 // end imageCards
 // start sectionWorldOfCamels
+body .sectionWorldOfCamels .swiperCamels {
+    margin-left: -130px;
+}
+
 body .sectionFarms div .divMaintFarms,
 body .sectionWorldOfCamels,
 body .sectionWorldOfCamels .swiperCamels {
@@ -593,6 +597,7 @@ body .containerNavbar .sectionShepherd div .tagSize28 {
 // end Shepherd
 // start camel Supplies
 .swiperText {
+    color: $navbarHump;
     background-color: $colorSupplies;
 }
 
@@ -857,9 +862,9 @@ body .containerNavbar .sectionFooterCenter form .inputSubmit:hover {
     background-color: $colorhoverInput;
 }
 
-body .containerNavbar .sectionFooterCenter form div input[type=checkbox] {
-    width: 20px;
-    height: 20px;
+.containerNavbar .sectionFooterCenter form div input[type="checkbox"] {
+    width: 1.3em;
+    height: 1.3em;
 }
 
 // end footer center

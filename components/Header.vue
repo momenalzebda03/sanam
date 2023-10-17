@@ -6,25 +6,25 @@
                 <v-icon v-else class="text-white">mdi-menu</v-icon>
             </v-btn>
             <v-col>
-                <v-list class="d-flex bg-transparent overflow-hidden">
-                    <v-list-item class="px-0">
+                <ul class="d-flex bg-transparent overflow-hidden">
+                    <li class="px-0">
                         <router-link to="/">
                             <img src="~/assets/images&icons/imagesNavbar/luggage.svg" alt="" v-if="mobileMenuOpen">
                             <img src="~/assets/images&icons/imagesNavbar/massgeMobile.svg" alt="" v-else>
                         </router-link>
-                    </v-list-item>
-                    <v-list-item class="px-5">
+                    </li>
+                    <li class="px-5">
                         <router-link to="/">
                             <img src="~/assets/images&icons/imagesNavbar/search.svg" alt="" v-if="mobileMenuOpen">
                             <img src="~/assets/images&icons/imagesNavbar/searchMobile.svg" alt="" v-else>
                         </router-link>
-                    </v-list-item>
-                    <v-list-item class="px-0">
+                    </li>
+                    <li class="px-0">
                         <router-link to="/">
                             <img src="~/assets/images&icons/imagesNavbar/users.svg" alt="" class="d-none d-md-block">
                         </router-link>
-                    </v-list-item>
-                </v-list>
+                    </li>
+                </ul>
             </v-col>
             <ul class="d-flex flex-column-reverse flex-md-row gapIcon listResponse px-5 px-md-0" v-if="mobileMenuOpen">
                 <li class="rounded-lg" v-for="(listNavbar, index) in listNavbars" :key="listNavbar">

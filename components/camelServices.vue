@@ -79,6 +79,6 @@
 </template>
 
 <script setup>
-const propsTextBox = ref(2);
+const propsTextBox = ref(3);
 const indexNumber = ref(3);
 </script>

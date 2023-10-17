@@ -116,4 +116,12 @@
 
 <script setup>
 const indexNumber = ref(2);
+const imageLoop = ref([
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn1.png' },
+    { imageSlide: '' },
+    { imageSlide: '' },
+    { imageSlide: '' },
+    { imageSlide: '' },
+    { imageSlide: '' }
+])
 </script>
