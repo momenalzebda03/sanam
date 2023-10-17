@@ -42,68 +42,20 @@
     <footer class="sectionFooter">
         <v-container>
             <v-row>
-                <v-col cols="6" md="3" class="text-end">
-                    <h2 class="font-weight-bold activeTitle py-5 rounded-xl">خدمات الإبل</h2>
+                <v-col cols="6" md="3" class="text-end" v-for="loopServices in loopServicess" :key="loopServices">
+                    <h2 class="font-weight-bold activeTitle py-5 rounded-xl">{{ loopServices.title }}</h2>
                     <ul class="d-md-flex flex-column rowGap1 d-none align-end">
                         <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">الخدمات الإستشارية</li>
+                            <li class="tagTransition">{{ loopServices.listOne }}</li>
                         </router-link>
                         <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">خدمات نقل الإبل</li>
+                            <li class="tagTransition">{{ loopServices.listTow }}</li>
                         </router-link>
                         <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">خدمات العناية والنظافة</li>
+                            <li class="tagTransition">{{ loopServices.listThree }}</li>
                         </router-link>
                         <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">خدمات طبية</li>
-                        </router-link>
-                    </ul>
-                </v-col>
-                <v-col cols="6" md="3" class="text-end">
-                    <h2 class="font-weight-bold activeTitle py-5 rounded-xl">لوازم الإبل</h2>
-                    <ul class="d-md-flex flex-column rowGap1 d-none align-end">
-                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">منتجات العناية والنظافة </li>
-                        </router-link>
-                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">منتجات غذاء الإبل</li>
-                        </router-link>
-                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">منتجات الرعاية الصحية</li>
-                        </router-link>
-                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">منتجات واكسسوارات الزينة</li>
-                        </router-link>
-                    </ul>
-                </v-col>
-                <v-col cols="6" md="3" class="text-end">
-                    <h2 class="font-weight-bold activeTitle py-5 rounded-xl">عالم الإبل</h2>
-                    <ul class="d-md-flex flex-column rowGap1 d-none align-end">
-                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">الإبل والتاريخ</li>
-                        </router-link>
-                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">الإبل والثقافة</li>
-                        </router-link>
-                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">الإبل والفنون</li>
-                        </router-link>
-                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">الإبل والاقتصاد</li>
-                        </router-link>
-                    </ul>
-                </v-col>
-                <v-col cols="6" md="3" class="text-end">
-                    <h2 class="font-weight-bold activeTitle py-5 rounded-xl">من سنام</h2>
-                    <ul class="d-md-flex flex-column rowGap1 d-none align-end">
-                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">قصتنا وأهدافنا</li>
-                        </router-link>
-                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">رؤيتنا وقيمتنا</li>
-                        </router-link>
-                        <router-link to="/" class="text-decoration-none text-black position-relative listLiFooter">
-                            <li class="tagTransition">تواصل معنا</li>
+                            <li class="tagTransition">{{ loopServices.listFour }}</li>
                         </router-link>
                     </ul>
                 </v-col>
@@ -128,44 +80,13 @@
                 </v-col>
                 <v-col>
                     <ul class="d-flex justify-md-start justify-center gap25 mt-2">
-                        <li class="d-flex flex-column overflow-hidden liHeight align-center">
+                        <li class="d-flex flex-column overflow-hidden liHeight align-center"
+                            v-for="iconFooter in iconFooters" :key="iconFooter">
                             <router-link to="/">
-                                <img src="~/assets/images&icons/imagesFooter/iconFacebook.svg" alt=""
-                                    class="linkListFooter tagTransition">
+                                <img :src="iconFooter.iconOne" alt="" class="linkListFooter tagTransition">
                             </router-link>
                             <router-link to="/">
-                                <img src="~/assets/images&icons/imagesFooter/iconfacebookOrange.svg" alt=""
-                                    class="linkListFooter tagTransition">
-                            </router-link>
-                        </li>
-                        <li class="d-flex flex-column overflow-hidden liHeight align-center">
-                            <router-link to="/">
-                                <img src="~/assets/images&icons/imagesFooter/iconTwitter.svg" alt=""
-                                    class="linkListFooter tagTransition">
-                            </router-link>
-                            <router-link to="/">
-                                <img src="~/assets/images&icons/imagesFooter/iconTwitterOrange.svg" alt=""
-                                    class="linkListFooter tagTransition">
-                            </router-link>
-                        </li>
-                        <li class="d-flex flex-column overflow-hidden liHeight align-center">
-                            <router-link to="/">
-                                <img src="~/assets/images&icons/imagesFooter/iconinstagram.svg" alt=""
-                                    class="linkListFooter tagTransition">
-                            </router-link>
-                            <router-link to="/">
-                                <img src="~/assets/images&icons/imagesFooter/iconinstagramOrange.svg" alt=""
-                                    class="linkListFooter tagTransition">
-                            </router-link>
-                        </li>
-                        <li class="d-flex flex-column overflow-hidden liHeight align-center">
-                            <router-link to="/">
-                                <img src="~/assets/images&icons/imagesFooter/iconLinkid.svg" alt=""
-                                    class="linkListFooter tagTransition">
-                            </router-link>
-                            <router-link to="/">
-                                <img src="~/assets/images&icons/imagesFooter/iconLinkedInOrange.svg" alt=""
-                                    class="linkListFooter tagTransition">
+                                <img :src="iconFooter.iconHover" alt="" class="linkListFooter tagTransition">
                             </router-link>
                         </li>
                     </ul>
@@ -201,4 +122,18 @@ const loopInputs = ref([
 loopInputs.value.forEach((input) => {
     input.hasText = computed(() => input.inputlastName.length > 0);
 });
+
+const loopServicess = ref([
+    { title: 'خدمات الإبل', listOne: 'الخدمات الإستشارية', listTow: 'خدمات نقل الإبل', listThree: 'خدمات العناية والنظافة', listFour: 'خدمات طبية' },
+    { title: 'لوازم الإبل', listOne: 'منتجات العناية والنظافة', listTow: 'منتجات غذاء الإبل', listThree: 'منتجات الرعاية الصحية', listFour: 'منتجات واكسسوارات الزينة' },
+    { title: 'عالم الإبل', listOne: 'الإبل والتاريخ', listTow: 'الإبل والثقافة', listThree: 'الإبل والفنون', listFour: 'الإبل والاقتصاد' },
+    { title: 'من سنام', listOne: 'قصتنا وأهدافنا', listTow: 'رؤيتنا وقيمتنا', listThree: 'تواصل معنا' }
+])
+
+const iconFooters = ref([
+    { iconOne: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconFacebook.svg', iconHover: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconFacebookOrange.svg' },
+    { iconOne: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconTwitter.svg', iconHover: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconTwitterOrange.svg' },
+    { iconOne: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconinstagram.svg', iconHover: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconinstagramOrange.svg' },
+    { iconOne: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconLinkid.svg', iconHover: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconLinkedInOrange.svg' }
+])
 </script>

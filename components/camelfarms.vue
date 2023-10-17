@@ -5,93 +5,15 @@
                 <div class="d-flex flex-column flex-md-row overflow-hidden">
                     <div class="slider">
                         <div class="slide-track flex-row flex-md-column">
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn1.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn2.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn3.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn4.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn5.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn6.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn7.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn1.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn2.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn3.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn4.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn5.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn6.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanLeft/mazayn7.png" alt="" />
+                            <div class="slide" v-for="imageLoopOne in imageLoopOnes" :key="imageLoopOne">
+                                <img :src="imageLoopOne.imageSlide" alt="" />
                             </div>
                         </div>
                     </div>
                     <div class="slider slider1">
                         <div class="slide-track flex-row flex-md-column">
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn1.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn2.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn3.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn4.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn5.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn6.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn7.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn1.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn2.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn3.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn4.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn5.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn6.png" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="~/assets/images&icons/imagesMazayen/mazanRight/mazayn7.png" alt="" />
+                            <div class="slide" v-for="imageLoopTow in imageLoopTows" :key="imageLoopTow">
+                                <img :src="imageLoopTow.imageSlide" alt="" />
                             </div>
                         </div>
                     </div>
@@ -116,12 +38,23 @@
 
 <script setup>
 const indexNumber = ref(2);
-const imageLoop = ref([
+const imageLoopOnes = ref([
     { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn1.png' },
-    { imageSlide: '' },
-    { imageSlide: '' },
-    { imageSlide: '' },
-    { imageSlide: '' },
-    { imageSlide: '' }
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn2.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn3.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn4.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn5.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn6.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn7.png' }
+])
+
+const imageLoopTows = ref([
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn1.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn2.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn3.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn4.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn5.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn6.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn7.png' }
 ])
 </script>
