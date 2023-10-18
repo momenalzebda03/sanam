@@ -1,5 +1,7 @@
 <template>
-    <component v-for="dynamicComponent in dynamicComponents" :key="dynamicComponent" :is="dynamicComponent" />
+    <div>
+        <component v-for="dynamicComponent in dynamicComponents" :key="dynamicComponent" :is="dynamicComponent" />
+    </div>
 </template>
 
 <script setup>
@@ -11,7 +13,7 @@ const dynamicComponents = [
     'WorldOfCamels',
     'Shepherd',
     'CamelSupplies',
-    'CamelFarms',
+    'Camelfarms',
     'CamelServices',
     'Footer'
 ].map((componentName) =>
