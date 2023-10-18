@@ -45,10 +45,24 @@ const imageLoopOnes = ref([
     { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn4.png' },
     { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn5.png' },
     { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn6.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn7.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn1.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn2.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn3.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn4.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn5.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn6.png' },
     { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanLeft/mazayn7.png' }
 ])
 
 const imageLoopTows = ref([
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn1.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn2.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn3.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn4.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn5.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn6.png' },
+    { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn7.png' },
     { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn1.png' },
     { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn2.png' },
     { imageSlide: 'http://localhost:3000/_nuxt/assets/images&icons/imagesMazayen/mazanRight/mazayn3.png' },
