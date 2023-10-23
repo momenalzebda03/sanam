@@ -147,15 +147,16 @@
 </template>
 
 <script setup>
+import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
 const indexNumber = ref(1);
 const propsTextBox = ref(1);
 
 const wordLoops = ref([
-    { image: 'http://localhost:3000/_nuxt/assets/images&icons/imagesWord/imageWorld1.png', titleOne: 'رمز للتكيف', titleTow: 'جسد متفرد بقدرات هائلة', time: '8 دقائق قراءة' },
-    { image: 'http://localhost:3000/_nuxt/assets/images&icons/imagesWord/imageWorld2.png', titleOne: 'رحلة عبر الزمن', titleTow: 'الإبل في الثقافة والتاريخ', time: '8 دقائق قراءة' },
-    { image: 'http://localhost:3000/_nuxt/assets/images&icons/imagesWord/imageWorld3.png', titleOne: 'نهضة حضارية', titleTow: 'دور الإبل في الاقتصاد', time: '8 دقائق قراءة' },
-    { image: 'http://localhost:3000/_nuxt/assets/images&icons/imagesWord/imageWorld1.png', titleOne: 'رمز للتكيف', titleTow: 'جسد متفرد بقدرات هائلة', time: '8 دقائق قراءة' },
-    { image: 'http://localhost:3000/_nuxt/assets/images&icons/imagesWord/imageWorld2.png', titleOne: 'رحلة عبر الزمن', titleTow: 'الإبل في الثقافة والتاريخ', time: '8 دقائق قراءة' }
+    { image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesWord/imageWorld1.png', titleOne: 'رمز للتكيف', titleTow: 'جسد متفرد بقدرات هائلة', time: '8 دقائق قراءة' },
+    { image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesWord/imageWorld2.png', titleOne: 'رحلة عبر الزمن', titleTow: 'الإبل في الثقافة والتاريخ', time: '8 دقائق قراءة' },
+    { image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesWord/imageWorld3.png', titleOne: 'نهضة حضارية', titleTow: 'دور الإبل في الاقتصاد', time: '8 دقائق قراءة' },
+    { image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesWord/imageWorld1.png', titleOne: 'رمز للتكيف', titleTow: 'جسد متفرد بقدرات هائلة', time: '8 دقائق قراءة' },
+    { image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesWord/imageWorld2.png', titleOne: 'رحلة عبر الزمن', titleTow: 'الإبل في الثقافة والتاريخ', time: '8 دقائق قراءة' }
 ])
 </script>
 

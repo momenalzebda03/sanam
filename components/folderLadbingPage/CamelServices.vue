@@ -36,12 +36,13 @@
 </template>
 
 <script setup>
+import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
 const propsTextBox = ref(3);
 const indexNumber = ref(3);
 
 const colImageLoops = ref([
-    { mdRespons: 4, image1: 'http://localhost:3000/_nuxt/assets/images&icons/imagesServices/imageServices4.png', title1: 'ترقيم الإبل', image2: 'http://localhost:3000/_nuxt/assets/images&icons/imagesServices/imageServices5.png', title2: 'ملاج الإبل' },
-    { mdRespons: 4, image1: 'http://localhost:3000/_nuxt/assets/images&icons/imagesServices/imageServices2.png', title1: 'حلاقة الوبر', image2: 'http://localhost:3000/_nuxt/assets/images&icons/imagesServices/imageServices3.png', title2: 'تنظيف الوبر' },
-    { mdRespons: 6, image1: 'http://localhost:3000/_nuxt/assets/images&icons/imagesServices/imageServices1.png', title1: 'نقل الإبل' }
+    { mdRespons: 4, image1: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesServices/imageServices4.png', title1: 'ترقيم الإبل', image2: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesServices/imageServices5.png', title2: 'ملاج الإبل' },
+    { mdRespons: 4, image1: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesServices/imageServices2.png', title1: 'حلاقة الوبر', image2: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesServices/imageServices3.png', title2: 'تنظيف الوبر' },
+    { mdRespons: 6, image1: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesServices/imageServices1.png', title1: 'نقل الإبل' }
 ])
 </script>

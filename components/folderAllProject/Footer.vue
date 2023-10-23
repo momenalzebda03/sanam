@@ -131,9 +131,9 @@ const loopServicess = ref([
 ])
 
 const iconFooters = ref([
-    { iconOne: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconFacebook.svg', iconHover: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconFacebookOrange.svg' },
-    { iconOne: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconTwitter.svg', iconHover: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconTwitterOrange.svg' },
-    { iconOne: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconinstagram.svg', iconHover: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconinstagramOrange.svg' },
-    { iconOne: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconLinkid.svg', iconHover: 'http://localhost:3000/_nuxt/assets/images&icons/imagesFooter/iconLinkedInOrange.svg' }
+    { iconOne: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesFooter/iconFacebook.svg', iconHover: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesFooter/iconFacebookOrange.svg' },
+    { iconOne: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesFooter/iconTwitter.svg', iconHover: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesFooter/iconTwitterOrange.svg' },
+    { iconOne: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesFooter/iconinstagram.svg', iconHover: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesFooter/iconinstagramOrange.svg' },
+    { iconOne: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesFooter/iconLinkid.svg', iconHover: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesFooter/iconLinkedInOrange.svg' }
 ])
 </script>

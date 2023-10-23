@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex flex-column gap10" v-if="props.propsTextBox == 0">
         <div>
-            <img src="~/assets/images&icons/imagesAboutUs/imageSanam.png" alt="">
+            <img src="~/assets/images&icons/langingPage/imagesAboutUs/imageSanam.png" alt="">
         </div>
         <h2 class="text-h4"><span class="activeTitle">سنــام</span> منصة شاملة متخصصة في رعاية الإبل</h2>
         <p>سـنام منصة شاملة متخصصة في رعاية الإبل نوفِّر خدمات ومنتجات متميزة لتلبية احتياجات عملائنا، ونقدِّم

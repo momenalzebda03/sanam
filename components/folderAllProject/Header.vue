@@ -9,19 +9,22 @@
                 <ul class="d-flex bg-transparent overflow-hidden">
                     <li class="px-0">
                         <router-link to="/">
-                            <img src="~/assets/images&icons/imagesNavbar/luggage.svg" alt="" v-if="mobileMenuOpen">
-                            <img src="~/assets/images&icons/imagesNavbar/massgeMobile.svg" alt="" v-else>
+                            <img src="~/assets/images&icons/langingPage/imagesNavbar/luggage.svg" alt=""
+                                v-if="mobileMenuOpen">
+                            <img src="~/assets/images&icons/langingPage/imagesNavbar/massgeMobile.svg" alt="" v-else>
                         </router-link>
                     </li>
                     <li class="px-5">
                         <router-link to="/">
-                            <img src="~/assets/images&icons/imagesNavbar/search.svg" alt="" v-if="mobileMenuOpen">
-                            <img src="~/assets/images&icons/imagesNavbar/searchMobile.svg" alt="" v-else>
+                            <img src="~/assets/images&icons/langingPage/imagesNavbar/search.svg" alt=""
+                                v-if="mobileMenuOpen">
+                            <img src="~/assets/images&icons/langingPage/imagesNavbar/searchMobile.svg" alt="" v-else>
                         </router-link>
                     </li>
                     <li class="px-0">
                         <router-link to="/">
-                            <img src="~/assets/images&icons/imagesNavbar/users.svg" alt="" class="d-none d-md-block">
+                            <img src="~/assets/images&icons/langingPage/imagesNavbar/users.svg" alt=""
+                                class="d-none d-md-block">
                         </router-link>
                     </li>
                 </ul>
@@ -35,6 +38,7 @@
                         </div>
                         <span>{{ listNavbar.titleNavbar }}</span>
                     </router-link>
+                    <component-navbar />
                     <div v-if="listNavbar.activeComponent">
                         <component-navbar :indexNumber="index" />
                     </div>
@@ -43,8 +47,8 @@
             <v-col class="d-flex justify-end">
                 <div class="text-end">
                     <router-link to="/">
-                        <img src="~/assets/images&icons/imagesNavbar/logo.png" alt="" v-if="mobileMenuOpen">
-                        <img src="~/assets/images&icons/imagesNavbar/logoMobile.svg" alt="" v-else>
+                        <img src="~/assets/images&icons/langingPage/imagesNavbar/logo.png" alt="" v-if="mobileMenuOpen">
+                        <img src="~/assets/images&icons/langingPage/imagesNavbar/logoMobile.svg" alt="" v-else>
                     </router-link>
                 </div>
             </v-col>
@@ -53,6 +57,7 @@
 </template>
 
 <script setup>
+import ComponentNavbar from '~/components/folderAllProject/ComponentNavbar.vue';
 const mobileMenuOpen = ref(false);
 const listNavbars = ref([
     { titleNavbar: "من سنام", path: '/', activeComponent: false },

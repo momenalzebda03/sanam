@@ -11,7 +11,7 @@ export default {
       link: [
         {
           rel: "icon",
-          href: "http://localhost:3000/_nuxt/assets/images&icons/imagesNavbar/logo.png",
+          href: "http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesNavbar/logo.png",
         },
       ],
     },

@@ -23,14 +23,15 @@
 </template>
 
 <script setup>
+import ComponentShepherd from '@/components/folderLadbingPage/ComponentShepherd.vue';
 const indexNumber = ref(0);
 const propsTextBox = ref(0);
 
 const forLoopCardsSanams = ref([
-    { image: 'http://localhost:3000/_nuxt/assets/images&icons/imagesAboutUs/iconAboutUs1.svg', title: 'الأهداف', text: 'نتجاوز الحدود التقليدية ونجسد الروح الإبداعية في مجال رعاية الإبل. نسعى جاهدين لتعزيز التراث العربي ونشر الوعي بأهمية الإبل من خلال منصة شاملة ومتقدمة تلبي جميع احتياجات الإبل وتضمن رفاهيتها وصحتها.' },
-    { image: 'http://localhost:3000/_nuxt/assets/images&icons/imagesAboutUs/iconAboutUs2.svg', title: 'الرسالة', text: 'إبداعنا يكمن في دمج التراث العربي العريق وروح الابتكار التقني. حيث نهدف إلى إيصال رسالتنا الهامة بطرق مبتكرة وفعالة، وذلك بتعزيز الوعي بأهمية الإبل ومساهمتها الحيوية في ثقافتنا واقتصادنا.' },
+    { image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesAboutUs/iconAboutUs1.svg', title: 'الأهداف', text: 'نتجاوز الحدود التقليدية ونجسد الروح الإبداعية في مجال رعاية الإبل. نسعى جاهدين لتعزيز التراث العربي ونشر الوعي بأهمية الإبل من خلال منصة شاملة ومتقدمة تلبي جميع احتياجات الإبل وتضمن رفاهيتها وصحتها.' },
+    { image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesAboutUs/iconAboutUs2.svg', title: 'الرسالة', text: 'إبداعنا يكمن في دمج التراث العربي العريق وروح الابتكار التقني. حيث نهدف إلى إيصال رسالتنا الهامة بطرق مبتكرة وفعالة، وذلك بتعزيز الوعي بأهمية الإبل ومساهمتها الحيوية في ثقافتنا واقتصادنا.' },
     {
-        image: 'http://localhost:3000/_nuxt/assets/images&icons/imagesAboutUs/iconAboutUs3.svg', title: 'الرؤية', text: 'نطمح لأن نصبح روادًا في سوق الإبل، وذلك من خلال التركيز على الابتكار والتفرد والتميز باستخدام أحدث التقنيات والأساليب لتحسين جودة الرعاية ورفع مستوى الإنتاجية لجميع رعاة الإبل..'
+        image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesAboutUs/iconAboutUs3.svg', title: 'الرؤية', text: 'نطمح لأن نصبح روادًا في سوق الإبل، وذلك من خلال التركيز على الابتكار والتفرد والتميز باستخدام أحدث التقنيات والأساليب لتحسين جودة الرعاية ورفع مستوى الإنتاجية لجميع رعاة الإبل..'
     }
 ])
 </script>

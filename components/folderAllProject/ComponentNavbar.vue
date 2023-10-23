@@ -8,7 +8,7 @@
                             <h2 class="text-h3">منصة واحدة<br>تجمع بين كل يخص عالم الإبل</h2>
                             <div class="d-flex align-center flexRow">
                                 <div class="text-start divBottomGamel position-relative">
-                                    <img src="~/assets/images&icons/imagesNavbar/camel1.png" alt="">
+                                    <img src="~/assets/images&icons/langingPage/imagesNavbar/camel1.png" alt="">
                                 </div>
                                 <div class="text-center w-50 d-flex flex-column divTextTow">
                                     <p class="colorText">نتجاوز الحدود التقليدية ونجسد الروح الإبداعية في
@@ -28,7 +28,7 @@
                                                 <p class="font-weight-bold text-h5">الأخبار</p>
                                             </v-col>
                                             <v-col class="d-none d-md-block">
-                                                <img src="~/assets/images&icons/imagesNavbar/news.svg" alt=""
+                                                <img src="~/assets/images&icons/langingPage/imagesNavbar/news.svg" alt=""
                                                     class="colorImage">
                                             </v-col>
                                         </v-row>
@@ -43,7 +43,7 @@
                                                 <p class="font-weight-bold text-h5">من نحن</p>
                                             </v-col>
                                             <v-col class="d-none d-md-block">
-                                                <img src="~/assets/images&icons/imagesNavbar/gameil.svg" alt=""
+                                                <img src="~/assets/images&icons/langingPage/imagesNavbar/gameil.svg" alt=""
                                                     class="colorImage">
                                             </v-col>
                                         </v-row>
@@ -58,8 +58,8 @@
                                                 <p class="font-weight-bold text-h5">تواصل معنا</p>
                                             </v-col>
                                             <v-col class="d-none d-md-block">
-                                                <img src="~/assets/images&icons/imagesNavbar/usersCom.svg" alt=""
-                                                    class="colorImage">
+                                                <img src="~/assets/images&icons/langingPage/imagesNavbar/usersCom.svg"
+                                                    alt="" class="colorImage">
                                             </v-col>
                                         </v-row>
                                     </router-link>
@@ -73,7 +73,7 @@
                                                 <p class="font-weight-bold text-h5">شركاء سنام</p>
                                             </v-col>
                                             <v-col class="d-none d-md-block">
-                                                <img src="~/assets/images&icons/imagesNavbar/ok.svg" alt=""
+                                                <img src="~/assets/images&icons/langingPage/imagesNavbar/ok.svg" alt=""
                                                     class="colorImage">
                                             </v-col>
                                         </v-row>
@@ -94,7 +94,7 @@
                         <div class="divNavbarCamel text-center text-white font-weight-bold overflow-hidden">
                             <div class="d-flex align-center flexRow pe-5">
                                 <div class="text-start divBottomGamel position-relative">
-                                    <img src="~/assets/images&icons/imagesNavbar/camel2.png" alt="">
+                                    <img src="~/assets/images&icons/langingPage/imagesNavbar/camel2.png" alt="">
                                 </div>
                                 <div class="text-end d-flex flex-column divTextTow pe-5">
                                     <h2 class="text-h3">أمهر مقدمين الخدمات<br> في العالم</h2>
@@ -171,14 +171,14 @@
                         <div class="divNavbarCamel text-center text-white font-weight-bold overflow-hidden">
                             <div class="d-flex align-center flexRow px-5 py-5">
                                 <div class="text-start">
-                                    <img src="~/assets/images&icons/imagesNavbar/camel3.png" alt="">
+                                    <img src="~/assets/images&icons/langingPage/imagesNavbar/camel3.png" alt="">
                                 </div>
                                 <div class="text-end d-flex flex-column">
                                     <h2 class="text-h3 font-weight-bold">خصومات تصل لـ ٢٠٪</h2>
                                     <p class="colorText">على جميع المنتجات عند شرائك لأول مرة</p>
                                     <router-link to="/" class="text-decoration-none">
                                         <div class="d-flex justify-end gapIcon mt-4">
-                                            <img src="~/assets/images&icons/imagesNavbar/iconArrawLeft.svg" alt="">
+                                            <img src="~/assets/images&icons/langingPage/imagesNavbar/iconArrawLeft.svg" alt="">
                                             <p class="colorText">تصفح جميع المنتجات</p>
                                         </div>
                                     </router-link>

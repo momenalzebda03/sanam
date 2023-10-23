@@ -2,9 +2,9 @@
     <main class="sectionMain w-100 d-flex align-end">
         <div class="d-flex align-center justify-center position-absolute w-100 sectionVedioAndImage">
             <video autoplay muted loop class="position-absolute w-100 h-100 d-none d-md-block">
-                <source src="~/assets/images&icons/images&viedoMain/video.mp4">
+                <source src="~/assets/images&icons/langingPage/images&viedoMain/video.mp4">
             </video>
-            <img src="~/assets/images&icons/images&viedoMain/imageMobile.png" alt=""
+            <img src="~/assets/images&icons/langingPage/images&viedoMain/imageMobile.png" alt=""
                 class="position-absolute w-100 h-100 imageMainMobile d-md-none">
             <div class="text-white d-flex flex-column gap25">
                 <div class="text-center">
@@ -22,7 +22,7 @@
                         <div
                             class="px-5 pt-4 pb-3 borderWhite w-0 d-flex justify-center align-center text-white rounded-pill">
                             <div class="mt-3">
-                                <img src="~/assets/images&icons/images&viedoMain/iconArrawoBottom.svg" alt=""
+                                <img src="~/assets/images&icons/langingPage/images&viedoMain/iconArrawoBottom.svg" alt=""
                                     class="imageAnimation">
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                                         </div>
                                     </div>
                                     <div class="position-relative">
-                                        <img src="~/assets/images&icons/images&viedoMain/imageNews3.png" alt=""
+                                        <img src="~/assets/images&icons/langingPage/images&viedoMain/imageNews3.png" alt=""
                                             class="rounded-lg imageMobile300">
                                     </div>
                                 </router-link>
@@ -66,7 +66,7 @@
                                         </div>
                                     </div>
                                     <div class="position-relative">
-                                        <img src="~/assets/images&icons/images&viedoMain/imageNews1.png" alt=""
+                                        <img src="~/assets/images&icons/langingPage/images&viedoMain/imageNews1.png" alt=""
                                             class="rounded-lg imageMobile300">
                                     </div>
                                 </router-link>
@@ -83,7 +83,7 @@
                                         </div>
                                     </div>
                                     <div class="position-relative">
-                                        <img src="~/assets/images&icons/images&viedoMain/imageNews2.png" alt=""
+                                        <img src="~/assets/images&icons/langingPage/images&viedoMain/imageNews2.png" alt=""
                                             class="rounded-lg imageMobile300">
                                     </div>
                                 </router-link>
@@ -114,16 +114,17 @@
 </template>
 
 <script setup>
+import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
 const indexNumber = ref(0);
 const arrayCards = ref([
     {
-        textCatd: '١٢ مشروع ريادي في المملكة يستهدف هواة وملاك الإبل في مجال ا.....', readMore: 'متابعة المزيد', imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/images&viedoMain/imageNews3.png'
+        textCatd: '١٢ مشروع ريادي في المملكة يستهدف هواة وملاك الإبل في مجال ا.....', readMore: 'متابعة المزيد', imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/images&viedoMain/imageNews3.png'
     },
     {
-        textCatd: 'برعاية سمو الأمير محمد بن سلمان يتم إفتتاح أول مستشفى مختص بالـ .....', readMore: 'متابعة المزيد', imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/images&viedoMain/imageNews2.png'
+        textCatd: 'برعاية سمو الأمير محمد بن سلمان يتم إفتتاح أول مستشفى مختص بالـ .....', readMore: 'متابعة المزيد', imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/images&viedoMain/imageNews2.png'
     },
     {
-        textCatd: 'مزاين الإبل تبداً في العاشر من شهر أيلول تحت إشراف صاحب السـ .....', readMore: 'متابعة المزيد', imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/images&viedoMain/imageNews1.png'
+        textCatd: 'مزاين الإبل تبداً في العاشر من شهر أيلول تحت إشراف صاحب السـ .....', readMore: 'متابعة المزيد', imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/images&viedoMain/imageNews1.png'
     }
 ])
 function scrollToElement() {
@@ -146,6 +147,7 @@ export default {
         Swiper,
         SwiperSlide,
     },
+
     setup() {
         return {
             modules: [Pagination],

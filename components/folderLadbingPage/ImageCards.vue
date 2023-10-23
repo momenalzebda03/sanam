@@ -29,8 +29,8 @@
 
 <script setup>
 const forLoopImageCards = ref([
-    { imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/componentImages/imageComponent3.png', title: 'خدمات الإبل', text: 'تعرف على مجموعة متنوعة من المنتجات والمعدات التي تلبي احتياجات الإبل وتساهـ ...', readMore: 'قراءة المزيد' },
-    { imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/componentImages/imageComponent2.png', title: 'لوازم الإبل', text: 'تصفح مجموعتنا الواسعة من لوازم الإبل كل ما تحتاجه لرعاية الإبل بأفضل جودة وأسـ...', readMore: 'قراءة المزيد' },
-    { imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/componentImages/imageComponent1.png', title: 'عالم الإبل', text: 'تعرّف على الإبل واكتشف تاريخها العريق وثقافتها وأهميتها وكيفية رعايتها وتدريبـ ...', readMore: 'قراءة المزيد' }
+    { imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/componentImages/imageComponent3.png', title: 'خدمات الإبل', text: 'تعرف على مجموعة متنوعة من المنتجات والمعدات التي تلبي احتياجات الإبل وتساهـ ...', readMore: 'قراءة المزيد' },
+    { imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/componentImages/imageComponent2.png', title: 'لوازم الإبل', text: 'تصفح مجموعتنا الواسعة من لوازم الإبل كل ما تحتاجه لرعاية الإبل بأفضل جودة وأسـ...', readMore: 'قراءة المزيد' },
+    { imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/componentImages/imageComponent1.png', title: 'عالم الإبل', text: 'تعرّف على الإبل واكتشف تاريخها العريق وثقافتها وأهميتها وكيفية رعايتها وتدريبـ ...', readMore: 'قراءة المزيد' }
 ])
 </script>

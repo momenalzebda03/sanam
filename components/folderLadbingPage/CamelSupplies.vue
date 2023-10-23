@@ -22,7 +22,7 @@
                         <img :src="postCard.imageProduct" alt="" class="imageHeadband tagTransition">
                         <div class="divHoverSupplies d-flex justify-center flex-column gap10">
                             <div class="divSuppliesBox text-center tagTransition">
-                                <img src="~/assets/images&icons/imagesSupplies/arrows.png" alt="">
+                                <img src="~/assets/images&icons/langingPage/imagesSupplies/arrows.png" alt="">
                                 <h2 class="activeTitle">أنقر</h2>
                                 <span class="font-weight-bold">لعرض تفاصيل المنتج</span>
                             </div>
@@ -45,6 +45,7 @@
 </template>
 
 <script>
+import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
 export default {
@@ -76,14 +77,14 @@ const listSwipers = ref([
 ])
 
 const postCards = ref([
-    { moneySpan: 'ريال 25.50', dataFilter: 'CamelHeadband', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/imagesSupplies/imageHeadband.png', product: 'عقال الإبل', textproduct: 'يوضع العقال على الإبل مـ ...', isAnimating: false },
-    { moneySpan: 'ريال 59.00', dataFilter: 'FadamaShabak', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/imagesSupplies/Network.png', product: 'فدامة شبك', textproduct: 'توضع الفدامة على فم ا ...', isAnimating: false },
-    { moneySpan: 'ريال 43.00', dataFilter: 'Ceuta7Metres', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/imagesSupplies/Ceuta.png', product: 'سبتة ٧ متر', textproduct: 'تستخدم السبتة في رب....', isAnimating: false },
-    { moneySpan: 'ريال 63.00', dataFilter: 'CamelNecklace', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/imagesSupplies/contract.png', product: 'عقد الإبل', textproduct: 'يستخدم في تزيين الإبل  ...', isAnimating: false },
-    { moneySpan: 'ريال 43.00', dataFilter: 'Ceuta7Metres', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/imagesSupplies/Ceuta.png', product: 'سبتة ٧ متر', textproduct: 'تستخدم السبتة في رب....', isAnimating: false },
-    { moneySpan: 'ريال 59.00', dataFilter: 'CamelHalter', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/imagesSupplies/halter.png', product: 'رسن الإبل', textproduct: 'يوضع على الرأس ويستخدمـ...', isAnimating: false },
-    { moneySpan: 'ريال 43.00', dataFilter: 'Speech', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/imagesSupplies/Speech.png', product: 'خطام ', textproduct: 'يوضع الخطام على الإبل م...', isAnimating: false },
-    { moneySpan: 'ريال 77.00', dataFilter: 'Poor', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/imagesSupplies/Poor.png', product: 'فقاير', textproduct: 'يستخدم في تزيين الإبل ف ...', isAnimating: false }
+    { moneySpan: 'ريال 25.50', dataFilter: 'CamelHeadband', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesSupplies/imageHeadband.png', product: 'عقال الإبل', textproduct: 'يوضع العقال على الإبل مـ ...', isAnimating: false },
+    { moneySpan: 'ريال 59.00', dataFilter: 'FadamaShabak', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesSupplies/Network.png', product: 'فدامة شبك', textproduct: 'توضع الفدامة على فم ا ...', isAnimating: false },
+    { moneySpan: 'ريال 43.00', dataFilter: 'Ceuta7Metres', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesSupplies/Ceuta.png', product: 'سبتة ٧ متر', textproduct: 'تستخدم السبتة في رب....', isAnimating: false },
+    { moneySpan: 'ريال 63.00', dataFilter: 'CamelNecklace', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesSupplies/contract.png', product: 'عقد الإبل', textproduct: 'يستخدم في تزيين الإبل  ...', isAnimating: false },
+    { moneySpan: 'ريال 43.00', dataFilter: 'Ceuta7Metres', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesSupplies/Ceuta.png', product: 'سبتة ٧ متر', textproduct: 'تستخدم السبتة في رب....', isAnimating: false },
+    { moneySpan: 'ريال 59.00', dataFilter: 'CamelHalter', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesSupplies/halter.png', product: 'رسن الإبل', textproduct: 'يوضع على الرأس ويستخدمـ...', isAnimating: false },
+    { moneySpan: 'ريال 43.00', dataFilter: 'Speech', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesSupplies/Speech.png', product: 'خطام ', textproduct: 'يوضع الخطام على الإبل م...', isAnimating: false },
+    { moneySpan: 'ريال 77.00', dataFilter: 'Poor', imageProduct: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesSupplies/Poor.png', product: 'فقاير', textproduct: 'يستخدم في تزيين الإبل ف ...', isAnimating: false }
 ])
 
 const toggleFilter = (dataFilter) => {

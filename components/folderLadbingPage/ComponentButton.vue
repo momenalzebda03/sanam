@@ -4,7 +4,7 @@
             class="py-3 widthMobile w-75 divButton rounded-pill position-relative overflow-hidden text-white text-decoration-none borderWhite">
             <div class="ps-4 d-flex align-center position-relative">
                 <div class="bg-white imageButton rounded-circle d-flex justify-center align-center pe-1">
-                    <img src="~/assets/images&icons/imagesAll/iconArrawLeft.svg" alt="">
+                    <img src="~/assets/images&icons/langingPage/imagesAll/iconArrawLeft.svg" alt="">
                 </div>
                 <div class="text-center w-100 textButton tagTransition me-5 me-md-0">
                     <span class="d-md-none text-h5 text-black">الفعاليات</span>
@@ -18,7 +18,7 @@
             class="mt-5 py-3 divButton divButtonBlack rounded-pill position-relative overflow-hidden text-black text-decoration-none borderBlack">
             <div class="ps-4 d-flex align-center position-relative">
                 <div class="bg-black imageButton rounded-circle d-flex justify-center align-center pe-1">
-                    <img src="~/assets/images&icons/imagesAll/iconArrawLeft.svg" alt="" class="imageWhite">
+                    <img src="~/assets/images&icons/langingPage/imagesAll/iconArrawLeft.svg" alt="" class="imageWhite">
                 </div>
                 <div class="text-center w-100 textButton tagTransition me-5 me-md-0">
                     <span class="text-h5">تصفح لوازم الإبل</span>
@@ -31,7 +31,7 @@
             class="py-3 widthMobile w-50 divButton rounded-pill position-relative overflow-hidden text-white text-decoration-none borderWhite">
             <div class="ps-4 d-flex align-center position-relative">
                 <div class="bg-white imageButton rounded-circle d-flex justify-center align-center pe-1">
-                    <img src="~/assets/images&icons/imagesAll/iconArrawLeft.svg" alt="">
+                    <img src="~/assets/images&icons/langingPage/imagesAll/iconArrawLeft.svg" alt="">
                 </div>
                 <div class="text-center w-100 textButton tagTransition me-5 me-md-0">
                     <span class="d-md-none text-h5 text-black">الاشتراك بمزاين الإبل</span>
@@ -45,7 +45,7 @@
             class="mt-5 py-3 divButton divButtonBlack rounded-pill position-relative overflow-hidden text-black text-decoration-none borderBlack">
             <div class="ps-4 d-flex align-center position-relative">
                 <div class="bg-black imageButton rounded-circle d-flex justify-center align-center pe-1">
-                    <img src="~/assets/images&icons/imagesAll/iconArrawLeft.svg" alt="" class="imageWhite">
+                    <img src="~/assets/images&icons/langingPage/imagesAll/iconArrawLeft.svg" alt="" class="imageWhite">
                 </div>
                 <div class="text-center w-100 textButton tagTransition me-5 me-md-0">
                     <span class="text-h5">جميع خدمات الإبل</span>

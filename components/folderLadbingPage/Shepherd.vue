@@ -16,7 +16,7 @@
                         </div>
                     </v-col>
                     <v-col>
-                        <img src="~/assets/images&icons/imagesOurPartners/layer.png" alt="">
+                        <img src="~/assets/images&icons/langingPage/imagesOurPartners/layer.png" alt="">
                     </v-col>
                 </v-row>
             </v-container>
@@ -25,5 +25,6 @@
 </template>
 
 <script setup>
+import ComponentShepherd from '@/components/folderLadbingPage/ComponentShepherd.vue';
 const indexNumber = ref(1);
 </script>
