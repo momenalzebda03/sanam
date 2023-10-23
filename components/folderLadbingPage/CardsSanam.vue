@@ -23,6 +23,7 @@
 </template>
 
 <script setup>
+import ComponentTextBox from '@/components/folderLadbingPage/ComponentTextBox.vue';
 import ComponentShepherd from '@/components/folderLadbingPage/ComponentShepherd.vue';
 const indexNumber = ref(0);
 const propsTextBox = ref(0);

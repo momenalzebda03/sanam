@@ -147,6 +147,7 @@
 </template>
 
 <script setup>
+import ComponentTextBox from '@/components/folderLadbingPage/ComponentTextBox.vue';
 import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
 const indexNumber = ref(1);
 const propsTextBox = ref(1);

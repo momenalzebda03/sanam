@@ -36,6 +36,7 @@
 </template>
 
 <script setup>
+import ComponentTextBox from '@/components/folderLadbingPage/ComponentTextBox.vue';
 import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
 const propsTextBox = ref(3);
 const indexNumber = ref(3);

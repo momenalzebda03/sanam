@@ -45,7 +45,6 @@
 </template>
 
 <script>
-import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
 export default {
@@ -63,6 +62,8 @@ export default {
 </script>
 
 <script setup>
+import ComponentTextBox from '@/components/folderLadbingPage/ComponentTextBox.vue';
+import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
 const indexNumber = ref(1);
 const slidesPerView = ref(6);
 const propsTextBox = ref(2);
