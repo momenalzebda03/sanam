@@ -16,10 +16,23 @@
             </v-row>
             <div class="mt-5">
                 <form action="" method="">
-                    <input type="text" class="border w-100 rounded-xl py-5 text-end px-5 font-weight-bold text-h6"
-                        placeholder="اكتب أي شيء هنا للبحث عنه">
+                    <div class="position-relative">
+                        <input type="text" v-model="inputSearch"
+                            class="w-100 inputSearch rounded-pill bg-white py-5 px-5 text-end" />
+                        <div class="d-flex justify-space-between formLabel position-absolute">
+                            <label class="" :class="{ 'activeLabel': hasText }">اكتب أي شيء هنا
+                                للبحث عنه </label>
+                            <span>welcome</span>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
 </template>
+
+<script setup>
+const inputSearch = ref('');
+
+const hasText = computed(() => inputSearch.value.length > 0);
+</script>

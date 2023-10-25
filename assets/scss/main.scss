@@ -214,6 +214,22 @@ body .activeSwiper {
     background-color: $navbarHump;
 }
 
+.formLabel {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.2s ease all;
+    color: #888;
+}
+
+.activeLabel {
+    top: 10px;
+    transform: translateY(0);
+    font-size: 10px;
+    color: #333;
+}
+
 // end public
 // start navbar
 body header {
@@ -416,6 +432,11 @@ body main .containerNavbar .v-row .v-col .divCarousel {
 .size30 {
     font-size: 30px !important;
 }
+
+.inputSearch {
+    border: 2px solid $colorBlack;
+}
+
 // end seatchNone
 // start cardsSanam
 body .sectionCardsSanam::before {
@@ -844,23 +865,6 @@ body .sectionCenter {
 
 body .containerNavbar .sectionFooterCenter {
     background-color: $hoverNavbar;
-}
-
-body .containerNavbar .sectionFooterCenter form div .formLabel {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    pointer-events: none;
-    transition: 0.2s ease all;
-    color: #888;
-}
-
-body .containerNavbar .sectionFooterCenter form div .activeLabel {
-    top: 10px;
-    transform: translateY(0);
-    font-size: 10px;
-    color: #333;
 }
 
 body .containerNavbar .sectionFooterCenter form div input:focus-visible {
