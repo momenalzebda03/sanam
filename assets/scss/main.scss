@@ -39,7 +39,7 @@ li {
 }
 
 body .sectionFooter .containerNavbar div .linkFooter:hover,
-.activeTitle { 
+.activeTitle {
     color: $navbarHump !important;
 }
 
@@ -408,6 +408,15 @@ body main .containerNavbar .v-row .v-col .divCarousel {
 }
 
 // end main
+// start seatchNone
+.sectionSearch {
+    padding-top: 120px;
+}
+
+.size30 {
+    font-size: 30px !important;
+}
+// end seatchNone
 // start cardsSanam
 body .sectionCardsSanam::before {
     content: url("~/assets/images&icons/imagesAboutUs/star.svg");

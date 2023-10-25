@@ -4,7 +4,7 @@
             <v-container>
                 <v-row class="flex-column-reverse flex-md-row align-center">
                     <v-col cols="12" md="8">
-                        <form>
+                        <form action="" method="">
                             <v-row class="flex-row-reverse">
                                 <v-col cols="12" :md="loopInput.scrrenMd" v-for="loopInput in loopInputs"
                                     :key="loopInput.textLabel">
