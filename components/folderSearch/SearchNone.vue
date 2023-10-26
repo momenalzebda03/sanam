@@ -17,12 +17,12 @@
             <div class="mt-5">
                 <form action="" method="">
                     <div class="position-relative">
-                        <input type="text" v-model="inputSearch"
-                            class="w-100 inputSearch rounded-pill bg-white py-5 text-end" />
+                        <input type="text" v-model="inputSearch" class="w-100 inputSearch bg-white text-end" />
                         <div
                             class="formLabel position-absolute d-flex justify-space-between align-center divWidthSearch h-100">
-                            <div>
-                                <span>welcome</span>
+                            <div class="sectionFooterCenter py-3 px-3 d-flex justify-center align-center"
+                                style="border-radius: 20px;">
+                                <img src="~/assets/images&icons/langingPage/imagesNavbar/searchMobile.svg" alt="">
                             </div>
                             <label class="formLabel position-absolute" :class="{ 'activeLabel': hasText }">اكتب أي شيء هنا
                                 للبحث عنه </label>
