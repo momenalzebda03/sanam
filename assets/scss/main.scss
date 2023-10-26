@@ -434,7 +434,12 @@ body main .containerNavbar .v-row .v-col .divCarousel {
 }
 
 .inputSearch {
+    padding-right: 38px;
     border: 2px solid $colorBlack;
+}
+
+.divWidthSearch {
+    width: 97%;
 }
 
 // end seatchNone
