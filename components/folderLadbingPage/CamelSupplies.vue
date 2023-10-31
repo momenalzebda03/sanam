@@ -44,24 +44,8 @@
     </section>
 </template>
 
-<script>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-
-export default {
-    components: {
-        Swiper,
-        SwiperSlide,
-    },
-
-    setup() {
-        return {
-            slidesPerView,
-        };
-    },
-};
-</script>
-
 <script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue';
 import ComponentTextBox from '@/components/folderLadbingPage/ComponentTextBox.vue';
 import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
 const indexNumber = ref(1);
@@ -119,5 +103,9 @@ const functionHeartAnimation = (index) => {
 
 onMounted(() => {
     window.innerWidth <= 990 ? slidesPerView.value = 2 : '';
+
+    return {
+        slidesPerView,
+    };
 });
 </script>

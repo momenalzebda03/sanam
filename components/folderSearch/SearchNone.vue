@@ -20,9 +20,17 @@
                         <input type="text" v-model="inputSearch" class="w-100 inputSearch bg-white text-end" />
                         <div
                             class="formLabel position-absolute d-flex justify-space-between align-center divWidthSearch h-100">
-                            <div class="sectionFooterCenter py-3 px-3 d-flex justify-center align-center"
-                                style="border-radius: 20px;">
-                                <img src="~/assets/images&icons/langingPage/imagesNavbar/searchMobile.svg" alt="">
+                            <div class="d-flex align-center gap25 position-relative divMouse">
+                                <div
+                                    class="sectionFooterCenter py-3 px-3 d-flex justify-center align-center divSearchBackground">
+                                    <img src="~/assets/images&icons/langingPage/imagesNavbar/searchMobile.svg" alt="">
+                                </div>
+                                <div class="d-flex text-black gap10">
+                                    <img src="~/assets/images&icons/imagesSearch/iconArraow.svg" alt=""
+                                        class="mt-1 imageArraw">
+                                    <span class="font-weight-bold">جميع الأوقات</span>
+                                </div>
+                                <p>welcome</p>
                             </div>
                             <label class="formLabel position-absolute" :class="{ 'activeLabel': hasText }">اكتب أي شيء هنا
                                 للبحث عنه </label>
@@ -37,4 +45,8 @@
 <script setup>
 const inputSearch = ref('');
 const hasText = computed(() => inputSearch.value.length > 0);
+
+function clickdropDown() {
+    console.log("welcome");
+}
 </script>
