@@ -1,7 +1,7 @@
 <template>
     <section class="position-relative sectionWorldOfCamels">
         <component-text-box :propsTextBox="propsTextBox" />
-        <swiper :slidesPerView="slidesPerView" :spaceBetween="190" class="overflow-visible swiperCamels"
+        <swiper :slidesPerView="slidesPerView" :spaceBetween="190" class="overflow-visible swiperCamels d-none d-md-block"
             :centeredSlides="true" :initialSlide="2">
             <swiper-slide v-for="wordLoop in wordLoops" :key="wordLoop">
                 <div class="position-relative imageColor imageColor1 text-white">
@@ -21,6 +21,30 @@
                                 <h3>{{ wordLoop.titleTow }}</h3>
                                 <div class="mt-4">
                                     <router-link to="/" class="bg-white px-3 py-3 rounded-pill text-decoration-none">
+                                        {{ wordLoop.time }}
+                                    </router-link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper>
+        <swiper class="topSwiperMobile d-md-none mt-5 pt-5">
+            <swiper-slide v-for="wordLoop in wordLoops" :key="wordLoop">
+                <div class="position-relative imageColor imageColor1 text-white">
+                    <img :src="wordLoop.image" alt="" class="swiperImage">
+                    <div class="position-absolute textBottom textBottom1 tagTransition text-center">
+                        <div class="hoverImage tagTransition d-flex justify-space-between position-absolute align-end">
+                            <router-link to="/"
+                                class="rounded-circle borderWhite divCircle d-flex justify-center align-center text-white text-decoration-none">
+                                <i class="fas fa-mouse-pointer iconSize"></i>
+                            </router-link>
+                            <div class="text-end">
+                                <h2 class="titleCardText">{{ wordLoop.titleOne }}</h2>
+                                <h3 class="textCardText">{{ wordLoop.titleTow }}</h3>
+                                <div class="mt-4">
+                                    <router-link to="/" class="bg-white px-5 py-2 rounded-pill text-decoration-none">
                                         {{ wordLoop.time }}
                                     </router-link>
                                 </div>
@@ -52,7 +76,7 @@ const wordLoops = ref([
 ])
 
 onMounted(() => {
-    window.innerWidth <= 990 ? slidesPerView.value = 3 : '';
+    window.innerWidth <= 990 ? slidesPerView.value = 2 : '';
 
     return {
         slidesPerView,
