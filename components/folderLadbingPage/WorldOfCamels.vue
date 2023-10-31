@@ -1,8 +1,8 @@
 <template>
     <section class="position-relative sectionWorldOfCamels">
         <component-text-box :propsTextBox="propsTextBox" />
-        <!-- <swiper :slidesPerView="4" :spaceBetween="190" class="overflow-visible swiperCamels" :centeredSlides="true"
-            :initialSlide="2">
+        <swiper :slidesPerView="slidesPerView" :spaceBetween="190" class="overflow-visible swiperCamels"
+            :centeredSlides="true" :initialSlide="2">
             <swiper-slide v-for="wordLoop in wordLoops" :key="wordLoop">
                 <div class="position-relative imageColor imageColor1 text-white">
                     <img :src="wordLoop.image" alt="" class="swiperImage">
@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </swiper-slide>
-        </swiper> -->
+        </swiper>
         <component-button :indexNumber="indexNumber" />
     </section>
 </template>
@@ -37,8 +37,11 @@
 <script setup>
 import ComponentTextBox from '@/components/folderLadbingPage/ComponentTextBox.vue';
 import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
 const indexNumber = ref(1);
 const propsTextBox = ref(1);
+const slidesPerView = ref(4);
 
 const wordLoops = ref([
     { image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesWord/imageWorld1.png', titleOne: 'رمز للتكيف', titleTow: 'جسد متفرد بقدرات هائلة', time: '8 دقائق قراءة' },
@@ -47,23 +50,12 @@ const wordLoops = ref([
     { image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesWord/imageWorld1.png', titleOne: 'رمز للتكيف', titleTow: 'جسد متفرد بقدرات هائلة', time: '8 دقائق قراءة' },
     { image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesWord/imageWorld2.png', titleOne: 'رحلة عبر الزمن', titleTow: 'الإبل في الثقافة والتاريخ', time: '8 دقائق قراءة' }
 ])
-</script>
 
-<script>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+onMounted(() => {
+    window.innerWidth <= 990 ? slidesPerView.value = 3 : '';
 
-export default {
-    components: {
-        Swiper,
-        SwiperSlide,
-    },
-    setup() {
-        return {
-            modules: [Pagination],
-        };
-    },
-};
+    return {
+        slidesPerView,
+    };
+});
 </script>
