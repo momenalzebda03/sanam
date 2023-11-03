@@ -36,55 +36,19 @@
                         </div>
                     </div>
                     <div class="d-md-none divCarousel">
-                        <swiper :pagination="true" :modules="modules" class="topSwiperMobile overflow-visible">
-                            <swiper-slide class="overflow-hidden">
+                        <swiper :pagination="true" :modules="modules" class="topSwiperMobile">
+                            <swiper-slide v-for="arrayCard in arrayCards" :key="arrayCard">
                                 <router-link to="/"
                                     class="d-flex gap25 text-decoration-none hoverCard position-relative px-5 py-2 align-center bg-white mx-3 rounded-lg justify-end">
                                     <div class="text-end d-flex justify-end flex-column position-relative">
-                                        <span class="textCard">١٢ مشروع ريادي في المملكة يستهدف هواة وملاك الإبل في مجال
-                                            ا.....</span>
+                                        <span class="textCard">{{ arrayCard.textCatd }}</span>
                                         <div class="text-end">
                                             <span class="text-h6 font-weight-bold activeTitle hoverPlus w-75"><i
-                                                    class="fas fa-plus iconPlus"></i> متابعة المزيد</span>
+                                                    class="fas fa-plus iconPlus"></i>{{ arrayCard.readMore }}</span>
                                         </div>
                                     </div>
                                     <div class="position-relative">
-                                        <img src="~/assets/images&icons/langingPage/images&viedoMain/imageNews3.png" alt=""
-                                            class="rounded-lg imageMobile300">
-                                    </div>
-                                </router-link>
-                            </swiper-slide>
-                            <swiper-slide class="overflow-hidden">
-                                <router-link to="/"
-                                    class="d-flex gap25 text-decoration-none hoverCard position-relative px-5 py-2 align-center bg-white mx-3 rounded-lg justify-end">
-                                    <div class="text-end d-flex justify-end flex-column position-relative">
-                                        <span class="textCard">مزاين الإبل تبداً في العاشر من شهر أيلول تحت إشراف صاحب السـ
-                                            ..... </span>
-                                        <div class="text-end">
-                                            <span class="text-h6 font-weight-bold activeTitle hoverPlus w-75"><i
-                                                    class="fas fa-plus iconPlus"></i> متابعة المزيد</span>
-                                        </div>
-                                    </div>
-                                    <div class="position-relative">
-                                        <img src="~/assets/images&icons/langingPage/images&viedoMain/imageNews1.png" alt=""
-                                            class="rounded-lg imageMobile300">
-                                    </div>
-                                </router-link>
-                            </swiper-slide>
-                            <swiper-slide class="overflow-hidden">
-                                <router-link to="/"
-                                    class="d-flex gap25 text-decoration-none hoverCard position-relative px-5 py-2 align-center bg-white mx-3 rounded-lg justify-end">
-                                    <div class="text-end d-flex justify-end flex-column position-relative">
-                                        <span class="textCard">برعاية سمو الأمير محمد بن سلمان يتم إفتتاح أول مستشفى مختص
-                                            بالـ ..... </span>
-                                        <div class="text-end">
-                                            <span class="text-h6 font-weight-bold activeTitle hoverPlus w-75"><i
-                                                    class="fas fa-plus iconPlus"></i> متابعة المزيد</span>
-                                        </div>
-                                    </div>
-                                    <div class="position-relative">
-                                        <img src="~/assets/images&icons/langingPage/images&viedoMain/imageNews2.png" alt=""
-                                            class="rounded-lg imageMobile300">
+                                        <img :src="arrayCard.imageCard" alt="" class="rounded-lg imageMobile300">
                                     </div>
                                 </router-link>
                             </swiper-slide>
@@ -115,6 +79,8 @@
 
 <script setup>
 import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
 const indexNumber = ref(0);
 const arrayCards = ref([
     {
@@ -127,6 +93,7 @@ const arrayCards = ref([
         textCatd: 'مزاين الإبل تبداً في العاشر من شهر أيلول تحت إشراف صاحب السـ .....', readMore: 'متابعة المزيد', imageCard: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/images&viedoMain/imageNews1.png'
     }
 ])
+
 function scrollToElement() {
     const scrollPosition = 660;
     window.scrollTo({
@@ -134,24 +101,4 @@ function scrollToElement() {
         behavior: 'smooth',
     });
 }
-</script>
-
-<script>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
-
-export default {
-    components: {
-        Swiper,
-        SwiperSlide,
-    },
-
-    setup() {
-        return {
-            modules: [Pagination],
-        };
-    },
-};
 </script>
