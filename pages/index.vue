@@ -3,6 +3,10 @@
 </template>
 
 <script setup>
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+
 const dynamicComponents = [
     'Main',
     'CardsSanam',
@@ -15,4 +19,10 @@ const dynamicComponents = [
 ].map((componentName) =>
     defineAsyncComponent(() => import(`@/components/folderLadbingPage/${componentName}.vue`))
 );
+
+onMounted(() => {
+    return {
+        modules: [Pagination],
+    };
+})
 </script>

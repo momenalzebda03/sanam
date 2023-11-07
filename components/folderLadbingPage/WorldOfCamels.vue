@@ -61,7 +61,7 @@
 <script setup>
 import ComponentTextBox from '@/components/folderLadbingPage/ComponentTextBox.vue';
 import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
-// import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
 
 const indexNumber = ref(1);
 const propsTextBox = ref(1);
@@ -73,23 +73,4 @@ const wordLoops = ref([
     { image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesWord/imageWorld1.png', titleOne: 'رمز للتكيف', titleTow: 'جسد متفرد بقدرات هائلة', time: '8 دقائق قراءة' },
     { image: 'http://localhost:3000/_nuxt/assets/images&icons/langingPage/imagesWord/imageWorld2.png', titleOne: 'رحلة عبر الزمن', titleTow: 'الإبل في الثقافة والتاريخ', time: '8 دقائق قراءة' }
 ])
-</script>
-
-<script>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
-
-export default {
-    components: {
-        Swiper,
-        SwiperSlide,
-    },
-    setup() {
-        return {
-            modules: [Pagination],
-        };
-    },
-};
 </script>

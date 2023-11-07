@@ -79,7 +79,6 @@
 
 <script setup>
 import ComponentButton from '@/components/folderLadbingPage/ComponentButton.vue';
-import { Swiper, SwiperSlide } from 'swiper/vue';
 
 const indexNumber = ref(0);
 const arrayCards = ref([
