@@ -2,7 +2,7 @@
     <section class="containerNavbar mt-5 pt-5">
         <component-text-box :propsTextBox="propsTextBox" />
         <v-row class="mt-5">
-            <div v-for="colImageLoop in colImageLoops" :key="colImageLoop">
+            <div v-for="colImageLoop in colImageLoops" :key="colImageLoop" class="widthMobile">
                 <v-col cols="12" class="d-flex flex-column gapRow" :md="colImageLoop.md">
                     <div class="position-relative divImageBlack text-white d-flex justify-center overflow-hidden">
                         <img :src="colImageLoop.image1" alt="" class="rounded-lg tagTransition w-100">
