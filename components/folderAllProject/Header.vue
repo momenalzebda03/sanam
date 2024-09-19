@@ -13,7 +13,7 @@
                         </router-link>
                     </li>
                     <li class="px-5">
-                        <router-link to="/">
+                        <router-link to="/indexSearch">
                             <img src="~/assets/images&icons/langingPage/imagesNavbar/search.svg" alt="">
                         </router-link>
                     </li>
