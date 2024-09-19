@@ -66,8 +66,8 @@ const toggleMobileMenu = () => {
 };
 
 const toggleActiveState = (index) => {
-    listNavbars.value.forEach((item, idx) => {
-        item.activeComponent = idx === index;
+    listNavbars.value.forEach((checkList, idx) => {
+        checkList.activeComponent = idx === index;
     });
 };
 
