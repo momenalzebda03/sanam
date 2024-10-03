@@ -93,7 +93,7 @@
                 </v-col>
                 <v-col>
                     <div class="text-center">
-                        <span class="text-h6">جميع الحقوق محفوظة © 2023</span>
+                        <span class="text-h6">جميع الحقوق محفوظة © 2024</span>
                     </div>
                 </v-col>
                 <v-col class="d-none d-md-block">
